@@ -116,9 +116,6 @@ function App() {
     }
   }
 
-  
-
-
   return (
     <main>
       <CartHeader
@@ -126,23 +123,19 @@ function App() {
         numberItems={numberItems}
         addProduct={addProduct}
       />
-
       <CartBody
         products={products}
         confirmRemove={confirmRemove}
         handleChangeQuantity={handleChangeQuantity}
       />
-
       <CartFooter products={products} subTotal={subTotal} tax={tax} getCode={getCode} codeAddSaleOff={codeAddSaleOff}/>
-
       <Modal
         nameItem={deleteProduct.name} // set name of item for modal
         products={products}
         isVisible={isShowModal}
         handleOk={removeProduct}
         handleCancel={() => setShowModal(false)}
-      />
-     
+      />   
     </main>
   );
 }
