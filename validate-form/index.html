@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGISTER NOW</title>
+    <link rel="icon" type="image/png" href="icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-header">
+        REGISTER NOW
+      </div>
+      <div class="box">
+        <form action="result.html" id="form-register">
+          <div class="input-info">
+            <label>Name</label><br />
+            <input type="text" name="name" class="input-text" id="name" /><br />
+            <span id="name-span"></span>
+          </div>
+
+          <div class="input-info">
+            <label>Date</label><br />
+            <div class="birthday">
+              <select name="day" id="day"></select>
+              <select name="month" id="month"></select>
+              <select name="year" id="year"></select>
+            </div>
+            <span id="day-span"></span>
+          </div>
+
+          <div class="input-info">
+            <label>Gender</label><br />
+            <div class="gender">
+              <input type="radio" name="bede" value="Male" id="male" /><label
+                for="male"
+                >Male</label
+              >
+              <input
+                type="radio"
+                name="bede"
+                value="Female"
+                id="female"
+              /><label for="female">Female</label>
+            </div>
+            <span id="gender-span"></span>
+          </div>
+
+          <div class="input-info">
+            <label>Address</label><br />
+            <input
+              type="text"
+              name="address"
+              class="input-text"
+              id="address"
+            /><br />
+            <span id="address-span"></span>
+          </div>
+
+          <div class="input-info">
+            <label>Phone number</label><br />
+            <input
+              type="text"
+              id="phone-number"
+              class="input-text"
+              name="phone-number"
+            /><br />
+            <span id="phone-number-span"></span>
+          </div>
+
+          <div class="input-info">
+            <label>Email</label><br />
+            <input
+              type="text"
+              name="email"
+              class="input-text"
+              id="email"
+            /><br />
+            <span id="email-span"></span>
+          </div>
+
+          <div class="input-info">
+            <label>Facebook</label><br />
+            <input
+              type="text"
+              name="facebook"
+              class="input-text"
+              id="facebook"
+            /><br />
+            <span id="facebook-span"></span>
+          </div>
+
+          <div class="input-info">
+            <label>Password</label><br />
+            <input
+              type="password"
+              name="password"
+              class="input-text"
+              id="password"
+            /><br />
+            <span id="password-span"></span>
+          </div>
+
+          <div class="input-info">
+            <div class="submit">
+              <button type="submit"
+                class="sign-in"
+                id="sign-in"
+                name="sign-in"
+               >REGISTER</button>
+              <input
+                type="submit"
+                class="sign-in"
+                id="sign-in"
+                name="sign-in"
+                value="REGISTER"
+              /><br />
+              You had an account? <a href="">Login now</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="js-index.js"></script>
+  </body>
+</html>

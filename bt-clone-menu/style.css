@@ -1,0 +1,24 @@
+body{
+	width: 1000px;
+	margin: auto;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+.button{
+	background-color: #009900;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 12.5%;
+	height: 60px;
+	float: left;
+	font-size: 12px;
+	
+}
+.button:hover{
+	background-color: #66ff66;
+}

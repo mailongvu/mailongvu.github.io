@@ -1,0 +1,10 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    color: white;
+}
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+}

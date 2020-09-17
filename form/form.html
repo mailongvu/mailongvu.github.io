@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        button {
+            height: 40px;
+            width: 200px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        #go {
+            width: 200px;
+            height: 40px;
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+
+        }
+
+        input:hover {
+            background-color: cyan;
+            border: 2px solid white;
+
+        }
+
+        .showPass {
+            padding: 20px;
+        }
+
+        .login {
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        .character {
+            height: 40px;
+            width: 280px;
+            margin: 5px;
+        }
+
+        .box {
+
+            background-color: lightgrey;
+            border: 2px solid grey;
+            height: 350px;
+            width: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0px 0px 10px 1px;
+            padding: 5px;
+
+
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="box">
+
+
+            <h2>ĐĂNG NHẬP TÀI KHOẢN</h2>
+            <input type="text" class="character" id="email" name= "email" placeholder="nhập địa chỉ email">
+            <input type="password" class="character" id="password" name= "password"placeholder="nhập mật khẩu">
+            <div class="showPass">
+                <input type="checkbox" name="showPass-hide" id="showPass-hide"> <label for="showPass-hide">Hiển thị / Ẩn
+                    mật khẩu</label> <br>
+                <input type="checkbox" name="remember" id="remember"> <label for="remember">Ghi nhớ mật khẩu</label>
+            </div>
+            <div class="login">
+                <div>
+                    <input type="submit" value="Đăng nhập" id="go" name="go">
+                </div>
+                <div>
+                    Bạn chưa có tài khoản? <a href="">Đăng ký</a>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </form>
+
+</body>
+
+</html>

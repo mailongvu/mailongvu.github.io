@@ -1,0 +1,200 @@
+#payToWin {
+    margin-top: 93px;
+}
+.text-link {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+} 
+.text-link a {
+    color: black;
+    text-decoration: none;
+}
+.min-box {
+    color: #1076b9;
+    font-weight: bold;
+}
+.mobile {
+    font-size: 14px;
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+}
+
+.login-line, .address-line, .pay-line {
+    display: flex;
+    align-items: center;
+}
+.login-line, .address-line {
+    margin-bottom: 23px;
+}
+.login-line span, .address-line span {
+    font-weight: bold;
+    margin-left: 25px;
+}
+.pay-line span {
+    font-weight: bold;
+    color: black;
+    margin-left: 25px;
+}
+.circle,
+.circle-off {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.circle{
+    background-color: #80B5E1;
+}
+.circle-off {
+    background-color: #c5c6c7;
+}
+.line-status-on {
+    width: 5px;
+    height: 30px;
+    background-color: #80B5E1;
+    position: absolute;
+    top: 17px;
+    left: 5px;
+}
+.line-status-off {
+    width: 5px;
+    height: 30px;
+    background-color: #80b5e1;
+    position: absolute;
+    top: 61px;
+    left: 5px;
+}
+
+.step-thirst {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.go-way {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.go-way-box {
+    border: 1px solid #c5c6c7;
+    border-radius: 3px;
+    padding: 2px 8px;
+}
+.go-way-box hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.input-choise {
+    margin-bottom: 5px;
+}
+.input-choise span{
+    font-size: 12px;
+}
+.input-choise label {
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+.input-choise a {
+    font-size: 14px;
+    text-decoration: none;
+}
+.list-sp {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.coupon-way {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+.coupon-way input {
+    padding-left: 7px;
+    font-size: 13px;
+    width: 70%;
+    height: 30px;
+}
+.coupon-way button {
+    width: 30%;
+    height: 30px;
+    border: none;
+    background-color: #80B5E1;
+    color: white;
+}
+.coupon-way:hover button {
+    background-color: #5196ce;
+}
+#pay {
+    width: 100%;
+    background-color: #FB684B;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+#pay:hover {
+    background-color: #ff2a00;
+}
+
+/* ------------------success popup------------------------- */
+.modal-content-success {
+    background-color: white;
+    border-radius: 3px;
+}
+.body-use {
+    margin-bottom: 7px;
+}
+.body-sum {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FB684B;
+}
+.head {
+    text-align: center;
+    font-size: 14px;
+}
+.head img {
+    max-width: 100%;
+}
+#tick-success {
+    height: 70px;
+}
+.body {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.list, .body-sum {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width:425px) {
+    #payToWin {
+        margin-top: 98px;
+    }
+}
+@media (min-width:992px) {
+    #payToWin{
+        margin-top: 100px;
+    }
+    .min-box {
+        background-color: #80B5E1;
+        color: white;  
+        text-align: center;
+        border-radius: 30px;
+        margin-left: 5px;
+        padding: 5px;
+    }
+}

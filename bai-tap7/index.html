@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>THIEP CHUC MUNG</title>
+	<style>
+		body{
+			width: 1000px;
+			margin: auto;
+		}
+
+
+		/*------Keyframes------*/
+		@keyframes mouse-run{
+			from{
+				opacity: 0;
+				top: 490px;
+				left: 60px;
+			}
+			to{
+				opacity: 1;
+				top: 490px;
+				left: 800px;
+			}
+		}
+
+		@keyframes text-2020{
+			from{
+				opacity: 0;
+				top: 490px;
+				left: 670px;
+			}
+			to{
+				opacity: 1;
+				top: 490px;
+				left: 670px;
+			}
+		}
+
+		@keyframes text-cmnm{
+			from{
+				opacity: 0;
+				top: 75px;
+				left: 42px;
+			}
+			to{
+				opacity: 1;
+				top: 75px;
+				left: 42px;
+			}
+		}
+
+		@keyframes text-nm{
+			from{
+				opacity: 0;
+				top: 301px;
+				left: 34px;
+			}
+			to{
+				opacity: 1;
+				top: 301px;
+				left: 34px;
+			}
+		}
+
+		@keyframes flower-tree{
+			from{
+				opacity: 0;
+				top: -70px;
+				left: 403px;
+			}
+			to{
+				opacity: 1;
+				top: -70px;
+				left: 403px;
+			}
+		}
+
+		@keyframes roll-1{
+			from{
+				opacity: 0;
+				top: 60px;
+				left: 30px;
+			}
+			to{
+				opacity: 1;
+				top: 60px;
+				left: 30px;
+			}
+		}
+
+		@keyframes roll-2{
+			from{
+				opacity: 0;
+				top: 75px;
+				left: 35px;
+				width: 1px;
+			}
+			to{
+				top: 75px;
+				left: 35px;
+				opacity: 1;
+				width: 385px;
+			}
+		}
+
+		@keyframes roll-3{
+			from{
+				opacity: 0;
+				top: 60px;
+				left: 47px;
+			}
+			to{
+				opacity: 1;
+				top: 60px;
+				left: 410px;
+
+			}
+		}
+
+		@keyframes roll-4{
+			from{
+				opacity: 0;
+				top: 290px;
+				left: 70px;
+			}
+			to{
+				opacity: 1;
+				top: 290px;
+				left: 70px;
+			}
+		}
+
+		@keyframes roll-6{
+			from{
+				opacity: 0;
+				top: 290px;
+				left: 90px;
+
+			}
+			to{
+				opacity: 1;
+				top: 290px;
+				left: 360px;
+
+			}
+		}
+
+		@keyframes roll-5{
+			from{
+				opacity: 0;
+				top: 305px;
+				left: 80px;
+				width: 1px;
+			}
+			to{
+				top: 305px;
+				left: 80px;
+				opacity: 1;
+				width: 290px;
+			}
+		}
+
+		@keyframes text-canhty{
+			from{
+				opacity: 0;
+				top: 460px;
+				left: -35px;
+			}
+			to{
+				opacity: 1;
+				top: 460px;
+				left: -35px;
+			}
+		}
+
+		@keyframes flower{
+			0% { 
+				opacity: 1;
+				transform: translateY(0px);
+			 }
+			100% { 
+				opacity: 0;
+				transform: translateY(600px) rotate(1000deg);
+			 }
+		}
+		/*-----------------------------------------*/
+
+		.container{
+			width: 900px;
+			height: 600px;
+			margin-top: 50px;
+			border: 1px solid red;
+			position: relative;
+			background-color: #E9967A;
+		}
+
+		.mouse{
+			animation: mouse-run 5s;
+			position: absolute;
+			top: 490px;
+			left: 800px;
+		}
+
+		.text-2020{
+			animation: text-2020 1s forwards;
+			position: absolute;
+			top: 490px;
+			left: 670px;
+			animation-delay: 5s;
+			opacity: 0;
+		}
+
+		.flower-tree{
+			animation: flower-tree 2s forwards;
+			position: absolute;
+			top: -70px;
+			left: 403px;
+			animation-delay: 1s;
+			opacity: 0;
+		}
+
+		.roll-1{
+			animation: roll-1 1s forwards;
+			position: absolute;
+			top: 60px;
+			left: 30px;
+			animation-delay: 1s;
+			opacity: 0;
+			z-index: 3;
+		}
+
+		.roll-2{
+			position: absolute;
+			animation: roll-2 3s forwards;
+			width: 1px;
+			height: 80px;
+			top: 75px;
+			left: 35px;
+			animation-delay: 1s;
+			background-color: #eaec52;
+			opacity: 0;
+			z-index: 2;
+
+		}
+
+		.roll-3{
+			animation: roll-3 3s forwards;
+			position: absolute;
+			top: 60px;
+			left: 410px;
+			animation-delay: 1s;
+			opacity: 0;
+			z-index: 3;
+		}
+
+		.text-cmnm{
+			animation: text-cmnm 1s forwards;
+			top: 75px;
+			left: 42px;
+			position: absolute;
+			z-index: 3;
+			animation-delay: 4s;
+			opacity: 0;
+		}
+
+		.roll-4{
+			animation: roll-4 1s forwards;
+			position: absolute;
+			top: 290px;
+			left: 70px;
+			animation-delay: 1.7s;
+			opacity: 0;
+			z-index: 3;
+		}
+
+		.roll-6{
+			animation: roll-6 3s forwards;
+			position: absolute;
+			top: 290px;
+			left: 360px;
+			animation-delay: 2s;
+			opacity: 0;
+			z-index: 3;
+		}
+
+		.roll-5{
+			position: absolute;
+			animation: roll-5 3s forwards;
+			width: 1px;
+			height: 80px;
+			top: 305px;
+			left: 80px;
+			animation-delay: 2s;
+			background-color: #eaec52;
+			opacity: 0;
+			z-index: 2;
+
+		}
+
+		.text-nm{
+			animation: text-nm 1s forwards;
+			top: 301px;
+			left: 34px;
+			position: absolute;
+			z-index: 3;
+			animation-delay: 4.5s;
+			opacity: 0;
+		}
+
+		.text-canhty{
+			animation: text-canhty 1s forwards;
+			top: 460px;
+			left: -35px;
+			position: absolute;
+			z-index: 3;
+			animation-delay: 5s;
+			opacity: 0;
+		}
+
+		.hr1 img{
+	animation: flower 8s infinite;
+	position: absolute;
+	left: 10px;
+	width: 30px;
+}
+
+	.hr2 img{
+	animation: flower 6s infinite;
+	position: absolute;
+	left: 50px;
+	width: 20px;
+	animation-delay: 1s;
+	opacity: 0;
+}
+
+	.hr3 img{
+	animation: flower 10s infinite;
+	position: absolute;
+	left: 74px;
+	width: 25px;
+	animation-delay: 1.1s;
+	opacity: 0;
+}
+
+	.hr4 img{
+	animation: flower 4s infinite;
+	position: absolute;
+	left: 100px;
+	width: 25px;
+	animation-delay: 0.5s;
+	opacity: 0;
+}
+
+	.hr5 img{
+	animation: flower 8s infinite;
+	position: absolute;
+	left: 132px;
+	width: 27px;
+	animation-delay: 1s;
+	opacity: 0;
+}
+
+	.hr6 img{
+	animation: flower 7s infinite;
+	position: absolute;
+	left: 211px;
+	width: 12px;
+
+}
+
+	.hr7 img{
+	animation: flower 10s infinite;
+	position: absolute;
+	left: 250px;
+	width: 23px;
+	animation-delay: 0.5s;
+	opacity: 0;
+}
+
+	.hr8 img{
+	animation: flower 4s infinite;
+	position: absolute;
+	left: 300px;
+	width: 19px;
+	animation-delay: 1.5s;
+	opacity: 0;
+}
+
+	.hr8 img{
+	animation: flower 10s infinite;
+	position: absolute;
+	left: 370px;
+	width: 19px;
+	animation-delay: 0.7s;
+	opacity: 0;
+}
+
+	.hr9 img{
+	animation: flower 5s infinite;
+	position: absolute;
+	left: 392px;
+	width: 14px;
+
+}
+
+	.hr10 img{
+	animation: flower 7s infinite;
+	position: absolute;
+	left: 416px;
+	width: 19px;
+	animation-delay: 0.6s;
+	opacity: 0;
+}
+
+	.hr10 img{
+	animation: flower 5s infinite;
+	position: absolute;
+	left: 500px;
+	width: 19px;
+	animation-delay: 1s;
+	opacity: 0;
+}
+
+	.hr11 img{
+	animation: flower 7s infinite;
+	position: absolute;
+	left: 555px;
+	width: 14px;
+	animation-delay: 0.5s;
+	opacity: 0;
+}
+
+	.hr12 img{
+	animation: flower 8s infinite;
+	position: absolute;
+	left: 600px;
+	width: 14px;
+	animation-delay: 0.9s;
+	opacity: 0;
+}
+
+	.hr13 img{
+	animation: flower 10s infinite;
+	position: absolute;
+	left: 634px;
+	width: 17px;
+	animation-delay: 0.4s;
+	opacity: 0;
+}
+
+	.hr14 img{
+	animation: flower 11s infinite;
+	position: absolute;
+	left: 700px;
+	width: 25px;
+	animation-delay: 1s;
+	opacity: 0;
+}
+
+	.hr15 img{
+	animation: flower 15s infinite;
+	position: absolute;
+	left: 742px;
+	width: 20px;
+	animation-delay: 0.5s;
+	opacity: 0;
+}
+
+	.hr16 img{
+	animation: flower 7s infinite;
+	position: absolute;
+	left: 798px;
+	width: 18px;
+	animation-delay: 0.7s;
+	opacity: 0;
+}
+
+	.hr17 img{
+	animation: flower 5s infinite;
+	position: absolute;
+	left: 830px;
+	width: 14px;
+}
+
+	.hr18 img{
+	animation: flower 10s infinite;
+	position: absolute;
+	left: 834px;
+	width: 10px;
+	animation-delay: 0.2s;
+	opacity: 0;
+}
+
+	.hr19 img{
+	animation: flower 7s infinite;
+	position: absolute;
+	left: 872px;
+	width: 14px;
+	animation-delay: 0.6s;
+	opacity: 0;
+}
+
+	.hr20 img{
+	animation: flower 6s infinite;
+	position: absolute;
+	left: 880px;
+	width: 20px;
+	animation-delay: 0.2s;
+	opacity: 0;
+}
+.hr1, .hr2, .hr3, .hr4, .hr5, .hr6, .hr7, .hr8, .hr9, .hr10, .hr11, .hr12, .hr13, .hr14, .hr15, .hr16, .hr17, .hr18, .hr19, .hr20 {
+	z-index: 5;
+}
+
+
+
+
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="mouse"><img src="ANH/a58.png" alt="con chuột chạy"></div>	
+		<div class="text-2020"><img src="ANH/2020_min.png"></div>
+		<div class="flower-tree"><img src="ANH/denlong_min.png"></div>
+		<div class="roll-1"><img src="ANH/cuon11.png"></div>
+		<div class="roll-3"><img src="ANH/cuon11.png"></div>
+		<div class="roll-2"></div>
+		<div class="roll-4"><img src="ANH/cuon11.png"></div>
+		<div class="roll-6"><img src="ANH/cuon11.png"></div>
+		<div class="text-cmnm"><img src="ANH/chucmung.png"></div>
+		<div class="text-nm"><img src="ANH/nammoi.png"></div>
+		<div class="roll-5"></div>
+		<div class="text-canhty"><img src="ANH/canhty.png"></div>
+		<div class="hr1"><img src="ANH/hdroi.png"></div>
+		<div class="hr2"><img src="ANH/hdroi.png"></div>
+		<div class="hr3"><img src="ANH/hdroi.png"></div>
+		<div class="hr4"><img src="ANH/hdroi.png"></div>
+		<div class="hr5"><img src="ANH/hdroi.png"></div>
+		<div class="hr6"><img src="ANH/hdroi.png"></div>
+		<div class="hr7"><img src="ANH/hdroi.png"></div>
+		<div class="hr8"><img src="ANH/hdroi.png"></div>
+		<div class="hr9"><img src="ANH/hdroi.png"></div>
+		<div class="hr10"><img src="ANH/hdroi.png"></div>
+	<div class="hr11"><img src="ANH/hdroi.png"></div>
+		<div class="hr12"><img src="ANH/hdroi.png"></div>
+		<div class="hr13"><img src="ANH/hdroi.png"></div>
+		<div class="hr14"><img src="ANH/hdroi.png"></div>
+		<div class="hr15"><img src="ANH/hdroi.png"></div>
+		<div class="hr16"><img src="ANH/hdroi.png"></div>
+		<div class="hr17"><img src="ANH/hdroi.png"></div>
+		<div class="hr18"><img src="ANH/hdroi.png"></div>
+		<div class="hr19"><img src="ANH/hdroi.png"></div>
+		<div class="hr20"><img src="ANH/hdroi.png"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,269 @@
+extends template-part/layout.pug
+block style
+    link(rel="stylesheet", href="css/chitiet-sp.css")
+block title
+    title Chi tiết sản phẩm
+block content
+    .container
+        .text-link
+            a(href="index.html") Trang chủ &rsaquo;&nbsp;
+            a(href="betrai.html") Bé trai &rsaquo;&nbsp;
+            .min-box Chi tiết sản phẩm
+        .item-view
+            .row
+                .col-12.col-sm-5.col-md-5.col-lg-5.col-xl-5
+                    .item-img
+                        .item-img-desktop
+                            .row
+                                .col-2
+                                    .item-img-simple-desktop
+                                        img#sp-main-1(src="img/detail/sp-main-1.jpg", alt="ảnh sản phẩm", onclick="changeImg1()")
+                                        img#sp-main-2(src="img/detail/sp-main-2.jpg", alt="ảnh sản phẩm", onclick="changeImg2()")
+                                        img#sp-main-3(src="img/detail/sp-main-3.jpg", alt="ảnh sản phẩm", onclick="changeImg3()")
+                                        img#sp-main-4(src="img/detail/sp-main-4.jpg", alt="ảnh sản phẩm", onclick="changeImg4()")
+                                .col-10
+                                    img#sp-main(src="img/detail/preview/sp-main-1.jpg", alt="ảnh sản phẩm" xoriginal="img/detail/original/front-1.jpg" )
+                            .video
+                                .video-text
+                                    p Video thực tế sản phẩm
+                                iframe(width='560' height='315' src='https://www.youtube.com/embed/_gfHLcMEXRc' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen)
+                        .item-img-mobile
+                            .item-img-main
+                                img#sp-main-mobile(src="img/detail/preview/sp-main-1.jpg", alt="ảnh sản phẩm" xoriginal="img/detail/original/front-1.jpg" )
+                            .item-img-simple-mobile
+                                .row
+                                    .col-3.col-sm-3.col-md-3.col-lg-3.col-xl-3
+                                        img#sp-main-1(src="img/detail/sp-main-1.jpg", alt="ảnh sản phẩm", onclick="changeImg1mobile()")
+                                    .col-3.col-sm-3.col-md-3.col-lg-3.col-xl-3
+                                        img#sp-main-2(src="img/detail/sp-main-2.jpg", alt="ảnh sản phẩm", onclick="changeImg2mobile()")
+                                    .col-3.col-sm-3.col-md-3.col-lg-3.col-xl-3
+                                        img#sp-main-3(src="img/detail/sp-main-3.jpg", alt="ảnh sản phẩm", onclick="changeImg3mobile()")
+                                    .col-3.col-sm-3.col-md-3.col-lg-3.col-xl-3
+                                        img#sp-main-4(src="img/detail/sp-main-4.jpg", alt="ảnh sản phẩm", onclick="changeImg4mobile()")   
+                .col-12.col-sm-7.col-md-7.col-lg-7.col-xl-7
+                    .item-detail
+                        .detail-main
+                            .detail-main-title
+                                .detail-main-title.text
+                                    hr
+                                    span Bộ áo khoác bé trai LOPO
+                                .detail-main-title.cart
+                                    span 290.000 vnđ
+                            hr
+                            .detail-main-content
+                                .msp
+                                    span Mã sản phẩm: SMB1234
+                                    .stocking
+                                        img(src="img/detail/tick.png", alt="tick chữ V")
+                                        span Còn hàng
+                                .origin
+                                    span Xuất xứ: Nhập khẩu chính hãng Thái Lan
+                                .color-size
+                                    .color
+                                        span Màu sắc:
+                                        .color-btn-zone
+                                            label.toggle(for='toggle-1')
+                                                input#toggle-1(type='checkbox')
+                                                .tick-1
+                                            label.toggle(for='toggle-2')
+                                                input#toggle-2(type='checkbox')
+                                                .tick-2
+                                            label.toggle(for='toggle-3')
+                                                input#toggle-3(type='checkbox')
+                                                .tick-3
+                                    .size
+                                        span Kích cỡ:
+                                        .size-btn-zone
+                                            label.toggle(for='toggle-s') 
+                                                input#toggle-s(type='checkbox') 
+                                                .tick-s S
+                                            label.toggle(for='toggle-m')
+                                                input#toggle-m(type='checkbox')
+                                                .tick-m M
+                                            label.toggle(for='toggle-l')
+                                                input#toggle-l(type='checkbox')
+                                                .tick-l L
+                                            label.toggle(for='toggle-xl')
+                                                input#toggle-xl(type='checkbox')
+                                                .tick-xl XL
+                            .detail-main-btn
+                                button(data-toggle="modal" data-target="#addToCart") THÊM VÀO GIỎ HÀNG
+                        
+                        .detail-normal
+                            .normal
+                                .tick-line1
+                                    img(src="img/detail/tick.png", alt="tick chữ V")
+                                    span MIỄN PHÍ VẬN CHUYỂN TOÀN QUỐC
+                                .tick-line2        
+                                    span Áp dụng cho đơn hàng từ 500.000 vnđ trở lên
+                            .normal
+                                .tick-line1
+                                    img(src="img/detail/tick.png", alt="tick chữ V")
+                                    span ĐỔI TRẢ DỄ DÀNG
+                                .tick-line2        
+                                    span Sản phẩm đổi trả trong vòng 30 ngày*
+                            .normal
+                                .tick-line1
+                                    img(src="img/detail/tick.png", alt="tick chữ V")
+                                    span GIẢM GIÁ ĐƠN HÀNG TIẾP THEO
+                                .tick-line2        
+                                    span Giảm giá lên tới 30% cho đơn hàng tiếp theo
+                        .detail-use
+                            .use
+                                .use-title
+                                    span Mô tả sản phẩm
+                                .use-content
+                                    span Set quần áo bé trai wade 3, quần áo đồng màu, tay áo có sọc đôi màu sắc, cho bé từ 2 tuổi.
+                            .use
+                                .use-title
+                                    span Chất liệu
+                                .use-content
+                                    span 100% cotton
+                            .use
+                                .use-title
+                                    span Hướng dẫn giặt là
+                                .use-content
+                                    span Giặt máy dưới 30 độ C
+                                    br
+                                    span Sấy khô dưới 60 độ C
+                                    br
+                                    span Không được sử dụng chất tẩy rửa
+                                    br
+                                    span Được là hơi ở nhiệt độ không quá nóng
+        .doing
+                .doing-box1
+                .doing-box2
+                    Span Sản phẩm tương tự
+        .owl-carousel
+            .item
+                .item-box
+                    a(href="chitiet-sp.html")
+                        img(src="img/boy/09.jpg", alt="ảnh 09")
+                    #item-mask
+                    a(href="chitiet-sp.html")
+                        #item-view Chi tiết
+                .item-info
+                    .item-info1
+                        .item-name
+                            a(href="chitiet-sp.html")
+                                span Bodysuit áo rời quần
+                        .item-price
+                            span 270.000 vnđ
+                            |  
+                            span.span-off |  -30%
+                    .item-addCart
+                        button.addCart 
+                            a(href="giohang.html") Mua ngay
+                        button.addCart-icon
+                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')            
+            .item
+                .item-box
+                    a(href="chitiet-sp.html")
+                        img(src="img/boy/11.jpg", alt="ảnh 11")
+                    #item-mask
+                    a(href="chitiet-sp.html")
+                        #item-view Chi tiết
+                .item-info
+                    .item-info1
+                        .item-name
+                            a(href="chitiet-sp.html")
+                                span Bodysuit áo rêu
+                        .item-price
+                            span 230.000 vnđ
+                            |  
+                            span.span-off |  -50%
+                    .item-addCart
+                        button.addCart 
+                            a(href="giohang.html") Mua ngay
+                        button.addCart-icon
+                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')            
+            .item
+                .item-box
+                    a(href="chitiet-sp.html")
+                        img(src="img/boy/06.jpg", alt="ảnh 06")
+                    #item-mask
+                    a(href="chitiet-sp.html")
+                        #item-view Chi tiết
+                .item-info
+                    .item-info1
+                        .item-name
+                            a(href="chitiet-sp.html")
+                                span Bodysuit áo nâu dày
+                        .item-price
+                            span 200.000 vnđ
+                            |  
+                            span.span-off |  -30%
+                    .item-addCart
+                        button.addCart 
+                            a(href="giohang.html") Mua ngay
+                        button.addCart-icon
+                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')            
+            .item
+                .item-box
+                    a(href="chitiet-sp.html")
+                        img(src="img/girl/02.jpg", alt="ảnh 02")
+                    #item-mask
+                    a(href="chitiet-sp.html")
+                        #item-view Chi tiết
+                .item-info
+                    .item-info1
+                        .item-name
+                            a(href="chitiet-sp.html")
+                                span Bodysuit bộ liền vàng
+                        .item-price
+                            span 170.000 vnđ
+                            |  
+                            span.span-off |  -20%
+                    .item-addCart
+                        button.addCart 
+                            a(href="giohang.html") Mua ngay
+                        button.addCart-icon
+                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')            
+            .item
+                .item-box
+                    a(href="chitiet-sp.html")
+                        img(src="img/girl/03.jpg", alt="ảnh 03")
+                    #item-mask
+                    a(href="chitiet-sp.html")
+                        #item-view Chi tiết
+                .item-info
+                    .item-info1
+                        .item-name
+                            a(href="chitiet-sp.html")
+                                span Váy thủy thủ màu trắng
+                        .item-price
+                            span 150.000 vnđ
+                            |  
+                            span.span-off |  -45%
+                    .item-addCart
+                        button.addCart 
+                            a(href="giohang.html") Mua ngay
+                        button.addCart-icon
+                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')            
+            .item
+                .item-box
+                    a(href="chitiet-sp.html")
+                        img(src="img/girl/05.jpg", alt="ảnh 05")
+                    #item-mask
+                    a(href="chitiet-sp.html")
+                        #item-view Chi tiết
+                .item-info
+                    .item-info1
+                        .item-name
+                            a(href="chitiet-sp.html")
+                                span Váy chấm bi nơ xanh
+                        .item-price
+                            span 245.000 vnđ
+                            |  
+                            span.span-off |  -30%
+                    .item-addCart
+                        button.addCart 
+                            a(href="giohang.html") Mua ngay
+                        button.addCart-icon
+                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')            

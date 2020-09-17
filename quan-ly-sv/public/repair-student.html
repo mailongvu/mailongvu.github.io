@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHỈNH SỬA THÔNG TIN</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="qlsv.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CHỈNH SỬA THÔNG TIN HỌC VIÊN</h1>
+        <form action="" id="repair-student">
+            <div class="student">
+                <div class="student-label">
+                    <label for="name">
+                        Họ tên
+                        <span>*</span>
+                    </label>
+                </div>
+                <div class="student-input">
+                    <input type="text" class="on-focus" name="name" id="name">
+                </div>
+            </div>
+    
+            <div class="student">
+                <div class="student-label">
+                    <label for="birthday">Năm sinh</label>
+                </div>
+                <div class="student-input">
+                    <input type="text" class="on-focus" name="birthday" id="birthday">
+                </div>
+            </div>
+    
+            <div class="student">
+                <div class="student-label">
+                    <label for="email">
+                        Email
+                        <span>*</span>
+                    </label>
+                </div>
+                <div class="student-input">
+                    <input type="text" class="on-focus" name="email" id="email">
+                </div>
+            </div>
+    
+            <div class="student">
+                <div class="student-label">
+                    <label for="phone">
+                        Số điện thoại
+                        <span>*</span>
+                    </label>
+                </div>
+                <div class="student-input">
+                    <input type="text" class="on-focus" name="phone" id="phone">
+                </div>
+            </div>
+            <div class="btn-arrow">
+                    <button type="button" class="btn btn-secondary">
+                        <a href="index.html" class="btn-back">
+                            <i class="fas fa-arrow-circle-left"></i>
+                            Quay lại
+                        </a>     
+                    </button>
+                
+                <button type="button" class="btn btn-success" onclick="repairInfo()">
+                    <i class="fas fa-save"></i>
+                    Cập nhật
+                </button>
+            </div>
+        </form>
+        
+    </div>
+
+
+    
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="all.min.js"></script>
+    <script src="repair-student-info.js"></script>
+</body>
+</html>

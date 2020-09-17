@@ -1,0 +1,36 @@
+https://topdev.vn/blog/lap-trinh-c/?fbclid=IwAR3U22BdFx3HXME5U_lH5cb7KR0A4FRcdnkxUpnL9EQcbDg8p8Zf7sdUVl0
+
+code github
+A-Quick setup — if you’ve done this kind of thing before
+
+<https://github.com/mailongvu/mailongvu.github.io.git>
+
+B
+
+echo "# mailongvu.githun.io" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/mailongvu/mailongvu.githun.io.git
+git push -u origin master
+                
+…or push an existing repository from the command line
+git remote add origin https://github.com/mailongvu/mailongvu.githun.io.git
+git push -u origin master
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+CAI DAT FILE .deb BANG TERMINAL
+cd Downloads
+
+sudo dpkg -i <tên_file_vừa_tải_về>.deb
+
+sudo apt install -f 
+------------------------------------------------------------------------
+FIX LOI /Users/me/.config/git/ignore': Permission denied
+'/Users/me/.config/git/attributes': Permission denied
+In Terminal cd to the User director with cd ~.
+
+Change the directory permissions with sudo chmod 755 .config
+
+Enter your login password.

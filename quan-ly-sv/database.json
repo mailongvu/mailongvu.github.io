@@ -1,0 +1,376 @@
+{
+  "protected_resources": {
+    "products": [
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+    ]
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "Hanbana",
+      "email": "lhubbard6@networkadvertising.org",
+      "password": "lhubbard6",
+      "phone": "967-486-1276",
+      "birthday": "11/24/2006",
+      "bio": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "gender": "Male",
+      "avatar": "https://robohash.org/doloresnatusaut.jpg?size=150x150&set=set1"
+    },
+    {
+      "id": 2,
+      "name": "Naruto",
+      "email": "lhubbard6@networkadvertising.org",
+      "password": "lhubbard6",
+      "phone": "967-486-1276",
+      "birthday": "11/24/2006",
+      "bio": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "gender": "Male",
+      "avatar": "https://robohash.org/doloresnatusaut.jpg?size=150x150&set=set1"
+    },
+    {
+      "id": 3,
+      "name": "UBubtun",
+      "email": "lhubbard6@networkadvertising.org",
+      "password": "lhubbard6",
+      "phone": "967-486-1276",
+      "birthday": "11/24/2006",
+      "bio": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "gender": "Male",
+      "avatar": "https://robohash.org/doloresnatusaut.jpg?size=150x150&set=set1"
+    },
+    {
+      "id": 4,
+      "name": "RObor Lanke",
+      "email": "lhubbard6@networkadvertising.org",
+      "password": "lhubbard6",
+      "phone": "967-486-1276",
+      "birthday": "11/24/2006",
+      "bio": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "gender": "Male",
+      "avatar": "https://robohash.org/doloresnatusaut.jpg?size=150x150&set=set1"
+    },
+    {
+      "id": 5,
+      "name": "Chelsa Robi",
+      "email": "lhubbard6@networkadvertising.org",
+      "password": "lhubbard6",
+      "phone": "967-486-1276",
+      "birthday": "11/24/2006",
+      "bio": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "gender": "Male",
+      "avatar": "https://robohash.org/doloresnatusaut.jpg?size=150x150&set=set1"
+    },
+    {
+      "id": 6,
+      "name": "Anba Rond",
+      "email": "lhubbard6@networkadvertising.org",
+      "password": "lhubbard6",
+      "phone": "967-486-1276",
+      "birthday": "11/24/2006",
+      "bio": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "gender": "Male",
+      "avatar": "https://robohash.org/doloresnatusaut.jpg?size=150x150&set=set1"
+    },
+    {
+      "id": 7,
+      "name": "Lindy Hubbard",
+      "email": "lhubbard6@networkadvertising.org",
+      "password": "lhubbard6",
+      "phone": "967-486-1276",
+      "birthday": "11/24/2006",
+      "bio": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "gender": "Male",
+      "avatar": "https://robohash.org/doloresnatusaut.jpg?size=150x150&set=set1"
+    },
+    {
+      "id": 8,
+      "name": "Jerad Adney",
+      "email": "jadney7@weebly.com",
+      "password": "jadney7",
+      "phone": "787-503-1575",
+      "birthday": "1/5/2009",
+      "bio": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
+      "gender": "Male",
+      "avatar": "https://robohash.org/debitiseacumque.bmp?size=150x150&set=set1"
+    },
+    {
+      "id": 9,
+      "name": "Davina Tassaker",
+      "email": "dtassaker8@latimes.com",
+      "password": "dtassaker8",
+      "phone": "932-840-1592",
+      "birthday": "10/24/2000",
+      "bio": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
+      "gender": "Female",
+      "avatar": "https://robohash.org/liberoametdolores.png?size=150x150&set=set1"
+    },
+    {
+      "id": 10,
+      "name": "Torrance Arboine",
+      "email": "tarboine9@delicious.com",
+      "password": "tarboine9",
+      "phone": "411-464-4275",
+      "birthday": "8/18/2005",
+      "bio": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
+      "gender": "Male",
+      "avatar": "https://robohash.org/estipsamalias.png?size=150x150&set=set1"
+    },
+    {
+      "name": "mai long vu",
+      "email": "vucomputing@gmail.com",
+      "phone": "0966867690",
+      "birthday": "07/06/1990",
+      "id": 11
+    },
+    {
+      "name": "Benzama",
+      "year": "324324",
+      "email": "vucodiing@gmail.com",
+      "phone": "345435",
+      "id": 12
+    },
+    {
+      "name": "Kakasi",
+      "year": "555555",
+      "email": "vucodiing@gmail.com",
+      "phone": "345435",
+      "id": 13
+    },
+    {
+      "name": "Lee",
+      "year": "25/10/1990",
+      "email": "lee@gmail.com",
+      "phone": "0143569874",
+      "id": 14
+    },
+    {
+      "name": "Itachi",
+      "year": "25/10/1990",
+      "email": "lee@gmail.com",
+      "phone": "0143569874",
+      "id": 15
+    },
+    {
+      "name": "Sasuke",
+      "year": "25/10/1990",
+      "email": "lee@gmail.com",
+      "phone": "0143569874",
+      "id": 16
+    },
+    {
+      "name": "Sakura",
+      "year": "25/10/1990",
+      "email": "lee@gmail.com",
+      "phone": "0143569874",
+      "id": 17
+    },
+    {
+      "name": "Kai",
+      "year": "25/10/1990",
+      "email": "lee@gmail.com",
+      "phone": "0143569874",
+      "id": 18
+    },
+    {
+      "name": "Shikamaru",
+      "year": "25/10/1990",
+      "email": "lee@gmail.com",
+      "phone": "0143569874",
+      "id": 19
+    },
+    {
+      "name": "Ino",
+      "year": "25/10/1990",
+      "email": "lee@gmail.com",
+      "phone": "0143569874",
+      "id": 20
+    },
+    {
+      "name": "Akamaru",
+      "year": "25/10/1990",
+      "email": "lee@gmail.com",
+      "phone": "0143569874",
+      "id": 21
+    },
+    {
+      "name": "KIba",
+      "year": "25/10/1990",
+      "email": "lee@gmail.com",
+      "phone": "0143569874",
+      "id": 22
+    },
+    {
+      "name": "Bruto",
+      "year": "25/10/1990",
+      "email": "lee@gmail.com",
+      "phone": "0143569874",
+      "id": 23
+    },
+    {
+      "name": "Shino",
+      "year": "25/10/1990",
+      "email": "lee@gmail.com",
+      "phone": "0143569874",
+      "id": 24
+    },
+    {
+      "name": "Kurenai",
+      "year": "25/10/1990",
+      "email": "lee@gmail.com",
+      "phone": "0143569874",
+      "id": 25
+    },
+    {
+      "name": "nguyen thuy dung",
+      "year": "1990",
+      "email": "dung@gmail.com",
+      "phone": "0968654521",
+      "id": 26
+    },
+    {
+      "name": "Tenten",
+      "year": "25/10/1990",
+      "email": "lee@gmail.com",
+      "phone": "0143569874",
+      "id": 27
+    },
+    {
+      "name": "Lee",
+      "year": "25/10/1990",
+      "email": "lee@gmail.com",
+      "phone": "0143569874",
+      "id": 28
+    },
+    {
+      "name": "Gai",
+      "year": "25/10/1990",
+      "email": "lee@gmail.com",
+      "phone": "0143569874",
+      "id": 29
+    },
+    {
+      "name": "Sarada Uchiha",
+      "year": "25/10/1990",
+      "email": "lee@gmail.com",
+      "phone": "0143569874",
+      "id": 30
+    },
+    {
+      "name": "Mitsuki",
+      "birthday": "11/18/1995",
+      "email": "vucodiing@gmail.com",
+      "phone": "0968654521",
+      "id": 31
+    },
+    {
+      "name": "Sarutobi",
+      "year": "2002",
+      "email": "a@gmail.com",
+      "phone": "1111111111",
+      "id": 32
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Appetizer - Lobster Phyllo Roll",
+      "thumbnail": "https://robohash.org/animiblanditiisveniam.jpg?size=350x200&set=set1",
+      "price": 121.99,
+      "quantity": 61,
+      "status": false
+    },
+    {
+      "id": 2,
+      "name": "Leeks - Large",
+      "thumbnail": "https://robohash.org/architectodoloresquo.jpg?size=350x200&set=set1",
+      "price": 150.05,
+      "quantity": 87,
+      "status": true
+    },
+    {
+      "id": 3,
+      "name": "Wiberg Cure",
+      "thumbnail": "https://robohash.org/etoccaecatieum.jpg?size=350x200&set=set1",
+      "price": 173.51,
+      "quantity": 92,
+      "status": false
+    },
+    {
+      "id": 4,
+      "name": "Bread - Dark Rye, Loaf",
+      "thumbnail": "https://robohash.org/quiistequi.png?size=350x200&set=set1",
+      "price": 58.62,
+      "quantity": 68,
+      "status": true
+    },
+    {
+      "id": 5,
+      "name": "Coffee - Beans, Whole",
+      "thumbnail": "https://robohash.org/maioresatquenihil.png?size=350x200&set=set1",
+      "price": 171.54,
+      "quantity": 11,
+      "status": false
+    },
+    {
+      "id": 6,
+      "name": "Ginger - Fresh",
+      "thumbnail": "https://robohash.org/fugitidest.bmp?size=350x200&set=set1",
+      "price": 116.37,
+      "quantity": 84,
+      "status": true
+    },
+    {
+      "id": 7,
+      "name": "Pastry - Cherry Danish - Mini",
+      "thumbnail": "https://robohash.org/temporibuseossimilique.jpg?size=350x200&set=set1",
+      "price": 195.78,
+      "quantity": 22,
+      "status": true
+    },
+    {
+      "id": 8,
+      "name": "Chicken - Leg, Fresh",
+      "thumbnail": "https://robohash.org/minusabsaepe.jpg?size=350x200&set=set1",
+      "price": 183.8,
+      "quantity": 14,
+      "status": true
+    },
+    {
+      "id": 9,
+      "name": "Dish Towel",
+      "thumbnail": "https://robohash.org/etnonrepellendus.jpg?size=350x200&set=set1",
+      "price": 86.2,
+      "quantity": 30,
+      "status": false
+    },
+    {
+      "id": 10,
+      "name": "Mix - Cappucino Cocktail",
+      "thumbnail": "https://robohash.org/maximeadicta.jpg?size=350x200&set=set1",
+      "price": 190.35,
+      "quantity": 13,
+      "status": true
+    }
+  ],
+  "cart": [
+    {
+      "id": 4,
+      "name": "Bread - Dark Rye, Loaf",
+      "thumbnail": "https://robohash.org/quiistequi.png?size=350x200&set=set1",
+      "price": 58.62,
+      "quantity": 68,
+      "status": true
+    },
+    {
+      "id": 6,
+      "name": "Ginger - Fresh",
+      "thumbnail": "https://robohash.org/fugitidest.bmp?size=350x200&set=set1",
+      "price": 116.37,
+      "quantity": 84,
+      "status": true
+    }
+  ]
+}

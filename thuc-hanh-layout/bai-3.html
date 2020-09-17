@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai thuc hanh 3</title>
+    <style>
+        body {
+            margin: 0px;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        
+        }
+
+        .box {
+            display: grid;
+            grid-template-columns: auto auto;
+            height: 200px;
+            margin-right: 20px;
+            margin-left: 20px;
+            width: 60%;
+            grid-gap: 15px;
+
+        }
+
+        .item {
+            background-color: blue;
+
+        }
+
+        .item5 {
+            width: 40%;
+            margin-right: 20px;
+            height: 700px;
+            background-color: blue;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                display: block;
+                margin-left: 15px;
+                margin-right: 15px;
+              
+            }
+
+            .box {
+                width: 100%;
+                margin-right: 0px;
+            margin-left: 0px;
+            
+            }
+
+            .item5 {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div class="item5"></div>
+    </div>
+
+</body>
+
+</html>

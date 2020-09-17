@@ -1,0 +1,556 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+input {
+  border: 1px solid #979797
+}
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.btn {
+  cursor: pointer;
+  background: #DEFF06;
+  border: 1px solid #DEFF06;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  letter-spacing: 0.0509971px;
+  color: #757575;
+}
+
+.header {
+  background: linear-gradient(171.9deg, #FFD200 14.55%, rgba(247, 151, 30, 0.983214) 91.73%);
+  height: 612px;
+}
+
+.container {
+  max-width: 1328px;
+  height: 44px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1328px;
+  height: 44px;
+  padding-top: 32px;
+  margin: auto;
+}
+
+.logo {
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  line-height: 28px;
+  font-size: 24px;
+  text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.0212013);
+  letter-spacing: 0.064727px;
+}
+.logo:hover {
+  color: #F5A623;
+}
+
+.navbar-menu {
+ 
+  width: 493px;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  letter-spacing: 0.0509971px;
+}
+
+.findDreamCar {
+  text-align: center;
+  margin-top: 128px;
+}
+
+.main-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 81px;
+  text-align: center;
+  letter-spacing: 1.12px;
+  color: #FFFFFF;
+  text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.151183);
+}
+
+.extra-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.91;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.0910043);
+  max-width: 617px;
+  height: 60px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-family {
+  margin-top: 18px;
+  line-height: 56px;
+  text-align: center;
+}
+
+#make-mode {
+  width: 307px;
+  height: 55px;
+  padding-left: 20px;
+}
+
+#post-code {
+  width: 142px;
+  height: 55px;
+  padding-left: 20px;
+}
+
+#find-car {
+ width: 142px;
+  height: 55px;
+}
+
+#make-mode, #post-code {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0.0509971px;
+  color: #757575;
+}
+
+#sign-up {
+  width: 110px;
+  height: 44px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.127264);
+}
+
+.car-img {
+  margin-top: 51px;
+  max-width: 679px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.body {
+  margin-top: 185px;
+}
+
+#text-1, #text-2 {
+  font-family: Poppins;
+  font-style: normal;
+  text-align: center;
+  mix-blend-mode: normal;
+}
+
+#text-1 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 0.0571121px;
+  color: #000000;
+  opacity: 0.8;
+  text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.0212013);
+}
+
+#text-2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #696969;
+  opacity: 0.5;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.0910043);
+}
+
+.hot-deal-grid {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 26px;
+  margin-top: 62px;
+  width: 1277px;
+  height: 506px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ship {
+  position: relative;
+}
+
+.price-tag {
+  position: absolute;
+  top: 26px;
+  left: 222px;
+}
+
+.price {
+  position: absolute;
+  top: 34px;
+  left: 247px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.0323635px;
+  color: #FFFFFF;
+}
+
+.oto-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 188px;
+  background: rgba(227, 227, 227, 0.732139);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-car {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 7px;
+  letter-spacing: 0.0517816px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.0212013);
+}
+
+.hot-btn {
+ 
+  text-align: center;
+}
+
+.orange-btn {
+  cursor: pointer;
+  margin-top: 48px;
+  max-width: 228px;
+  height: 60px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.059748px;
+  color: #FFFFFF;
+  background: #F5A623;
+  border: none;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.14);
+}
+
+.buy-tips {
+  margin-top: 107px;
+}
+
+.buy-tips-grid {
+  margin-top: 51px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1256px;
+  height: 200px;
+}
+
+.submarine {
+  cursor: pointer;
+  position: relative;
+}
+
+.submarine-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.0517816px;
+  color: #FFFFFF;
+  text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.443699);
+}
+
+#submarine-1, #submarine-2, #submarine-3 {
+  position: absolute;
+  top: 145px;
+}
+
+#submarine-1 {
+  left: 66px;
+}
+
+#submarine-2 {
+  left: 92px;
+}
+
+#submarine-3 {
+  left: 81px;
+}
+
+.message {
+  margin-top: 82px;
+  height: 348px;
+  background: linear-gradient(175.37deg, #FFD200 14.55%, rgba(247, 151, 30, 0.983214) 91.73%);
+}
+
+.main-message {
+  padding-top: 70px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.0863027px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.129076);
+}
+
+.extra-message {
+  margin-top: 11px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.381284);
+}
+
+.btn-message {
+  margin-top: 39px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 591px;
+  height: 55px;
+}
+
+.message #make-mode, .message #post-code {
+  border: none;
+}
+
+.footer {
+  height: 98px;
+  background: #342C2C;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1270px;
+  height: 28px;
+  padding-top: 36px;
+  margin: auto;
+}
+
+.nav-footer-logo {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.064727px;
+  color: #FFFFFF;
+  text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.0212013);
+}
+
+.nav-footer-menu {
+ width: 284px;
+  height: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.0509971px;
+  color: #FFFFFF;
+}
+#mail {
+  width: 449px;
+  height: 55px;
+  padding: 5px;
+}
+@media (max-width:1330px) {
+  #mail {
+    max-width: 449px;
+  }
+  #sign-up {
+    max-width: 110px;
+  }
+  #make-mode {
+    max-width: 307px;
+  }
+  
+  #post-code {
+    max-width: 142px;
+  }
+  
+  #find-car {
+   max-width: 142px;
+  }
+  .nav-footer-menu {
+    max-width: 284px;
+  }
+  .navbar-menu {
+    max-width: 493px;
+  }
+  .navbar, .nav-footer, .buy-tips {
+    max-width: 800px;
+  }
+  .hot-deal {
+    max-width: 800px;
+  }
+  .hot-deal-grid {
+    grid-template-columns: auto auto;
+    width: 100%;
+    height: auto;
+  }
+  .hot-deal {
+    margin: auto;
+  }
+  .ship {
+   width: 100%;
+  }
+  .buy-tips-grid {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+  .price-tag {
+    left: 310px;
+  }
+  .price {
+    left: 331px;
+  }
+  .buy-tips {
+    margin: auto;
+  }
+  #submarine-1 {
+    left: 268px;
+  }
+  #submarine-2 {
+    left: 292px;
+  }
+  #submarine-3 {
+    left: 282px;
+  }
+}
+
+@media (max-width:840px) {
+  #mail {
+    max-width: 449px;
+  }
+  #sign-up {
+    max-width: 110px;
+  }
+  #make-mode {
+    max-width: 307px;
+  }
+  
+  #post-code {
+    max-width: 142px;
+  }
+  
+  #find-car {
+   max-width: 142px;
+  }
+  .nav-footer-menu {
+    max-width: 284px;
+  }
+  .navbar-menu {
+    max-width: 493px;
+  }
+  .logo {
+    margin: auto;
+  }
+  .img-banner {
+    width: 100%;
+  }
+  .hot-deal {
+    max-width: 500px;
+    padding-top: 150px;
+  }
+  .hot-deal-grid {
+    grid-template-columns: auto;
+    width: 100%;
+    height: auto;
+    padding-left: 100px;
+  }
+  .ship {
+    max-width: 299.75px;
+  }
+  .extra-text {
+    height: auto;
+  }
+  .message {
+    height: auto;
+  }
+  .navbar, .navbar-menu, .nav-footer, .nav-footer-menu, .footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .price-tag {
+    left: 223px;
+  }
+  .price {
+    left: 246px;
+  }
+  .buy-tips-grid {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+  .submarine img {
+    width: 100%;
+  }
+  #submarine-1 {
+    top: 110px;
+    left: 55px;
+  }
+  #submarine-2 {
+    top: 110px;
+    left: 61px;
+  }
+  #submarine-3 {
+    top: 110px;
+    left: 45px;
+  }
+}

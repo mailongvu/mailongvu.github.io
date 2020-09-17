@@ -1,0 +1,131 @@
+#account-content {
+    margin-top: 93px;
+}
+.text-link {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+} 
+.text-link a {
+    color: black;
+    text-decoration: none;
+}
+.min-box {
+    color: #1076b9;
+    font-weight: bold;
+}
+.declare-account, .history-buy {
+    transform: 0.7s;
+}
+.avatar-account {
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+}
+.avatar img {
+    height: 40px;
+    width: 55px;
+}
+.info-account-page p {
+    margin-bottom: 0px;
+}
+.avatar-logout, .account-info-btn button {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    height: 45px;
+    border-radius: 7px;
+    line-height: 45px;
+    border: none;
+    cursor: pointer;
+}
+.avatar-logout {
+    width: 100%;
+    background-color: #1076b9;
+    margin-bottom: 10px;
+}
+.avatar-logout:hover {
+    background-color: #1499f1;
+}
+.account-info-btn {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.account-info-btn button {
+    width: 70%;
+    background-color: rgb(253, 69, 69);
+}
+.account-info-btn:hover button {
+    background-color: rgb(182, 23, 23);
+}
+.title-account-content, .title-history-buy {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.account-info {
+    margin-bottom: 15px;
+}
+.account-info label {
+    margin-bottom: 0px;
+}
+.account-info input, .account-info select {
+    width: 100%;
+    height: 35px;
+    border-radius: 7px;
+    border: 1px solid rgb(99, 98, 98);
+    padding-left: 7px;
+}
+.account-info textarea {
+    width: 100%;
+    height: 50px;
+    border-radius: 7px;
+    border: 1px solid rgb(99, 98, 98);
+}
+.btn-declare, .btn-history {
+    width: 100%;
+    height: 35px;
+    border-radius: 7px;
+    background-color: rgb(233, 232, 232);
+    display: flex;
+    align-items: center;
+    padding-left: 7px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+}
+.btn-declare img, .btn-history img {
+    height: 20px;
+    margin-right: 7px;
+}
+.btn-declare span, .btn-history span {
+    transition: 0.3s;
+}
+
+.history-buy {
+    display: none;
+}
+@media (min-width: 425px) {
+    #account-content {
+        margin-top: 98px;
+    }
+}
+@media (min-width:992px) {
+    #account-content{
+        margin-top: 100px;
+    }
+    .min-box {
+        background-color: #80B5E1;
+        color: white;  
+        text-align: center;
+        border-radius: 30px;
+        margin-left: 5px;
+        padding: 5px;
+    }
+    .btn-declare:hover span, .btn-history:hover span {
+        padding-left: 7px;
+    }
+}

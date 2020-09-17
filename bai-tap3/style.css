@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+}
+body{
+	width: 1000px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.header{
+	background-color: red;
+	color: white;
+	font-family: arial;
+	padding: 5px 10px;
+	text-align: center;
+	font-size: 17px;
+}
+.footer{
+	background-color: red;
+	color: white;
+	font-family: arial;
+	padding: 5px 10px;
+	text-align: center;
+	font-size: 10px;
+	clear: both;
+}
+.avatar{
+	width:200px;
+}
+.box{
+	float: left;
+	border: 1px solid #dddddd;
+	border-top-width: 5px;
+	width: 20%
+}
+.nguyenvanlinh{
+	border-color: #d34578;
+}
+.domuoi{
+	border-color: #456235;
+}
+.nongducmanh{
+	border-color: #565767;
+}
+.lekhaphieu{
+	border-color: #645365;
+}
+.nguyenphutrong{
+	border-color: #dfd567;
+}
+.wrap{
+	max-width: 1000px
+	margin: auto;
+}
+img{
+	max-width: 100%;
+	max-height: 300px;
+}
+

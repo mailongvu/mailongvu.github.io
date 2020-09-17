@@ -1,0 +1,69 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	width: 1200px;
+	margin: auto;
+	font-family: Sans-Serif;
+	cursor: pointer;
+}
+ul{
+	list-style-type:  none;
+}
+.footer-contact{
+	position: absolute;
+	top: 1300px;
+	width: 1200px;
+	height: 300px;
+	background-color: #f1c40f;
+}
+/*--BANNER--*/
+img{
+	width: 100%;
+}
+/*--MENU--*/
+
+a{
+	text-decoration: none;
+color: white;
+transition: 0.4s;
+}
+a:hover{
+	color: #fed330;
+border-bottom: 3px solid white;
+}
+
+.menu{
+	height: 50px;
+	width: 100%;
+	background-color: #2bcbba;
+	font-size: 25px;
+text-align: center;
+font-weight: bold;
+position: relative;
+}
+.menu li{
+	display: inline-block;
+	padding: 10px 30px;
+}
+/*--CONTACT--*/
+.map{
+	float: left;
+	box-shadow: 1px 1px 10px;
+	
+}
+
+.contact i{
+	color: #e67e22;
+	font-size: 20px;
+	padding: 10px;
+}
+/*--SALE--*/
+
+.sale{
+	display: grid;
+	padding-top: 10px;
+	grid-template-columns: auto auto;
+	grid-gap: 10px;
+	overflow: hidden;
+}

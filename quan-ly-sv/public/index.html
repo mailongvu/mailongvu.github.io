@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DANH SÁCH HỌC VIÊN</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="all.min.css">
+  <link rel="stylesheet" href="qlsv.css">
+</head>
+
+<body>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Có chắc chắn muốn xoá học viên?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Huỷ</button>
+          <button type="button" class="btn btn-primary" onclick="dellStudent()">Đồng ý</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>DANH SÁCH HỌC VIÊN LỚP FRONT-END 9</h1>
+    <hr>
+    <div class="find">
+      <input type="text"  id="find-smt">
+      <button type="button" class="btn btn-warning" onclick="filterName()">Tìm kiếm</button>
+    </div>
+    <div class="btn-group">
+      <div class="btn-new">
+        <div class="btn btn-success" id="btn-add">
+          <a href="add-new-student.html" class="add-student">
+            <i class="fas fa-plus-square"></i>Thêm học viên
+          </a>
+        </div>
+      </div>
+      
+      <!-- <div class="btn-filter">
+        <p>Lọc học viên:&nbsp;&nbsp;</p>
+        <button type="button" class="btn btn-outline-success" id="name-students" >Tên</button>
+        <button type="button" class="btn btn-outline-success" id="year-students">Năm sinh</button>
+        <button type="button" class="btn btn-outline-success" id="email-students">Email</button>
+      </div> -->
+    </div>
+
+    <div class="table-responsive-md">
+      <table class="table table-striped table-hover" id="table-sort">
+        <thead class="thead-dark">
+          <!-- <thead class="thead-dark"> -->
+          <tr>
+            <th scope="col">Họ tên</th>
+            <th scope="col">Năm sinh</th>
+            <th scope="col">Email</th>
+            <th scope="col">Số điện thoại</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <div class="btn-page">
+      <button type="button" class="btn btn-info" onclick="btn1()">1</button>
+      <button type="button" class="btn btn-info" onclick="btn2()">2</button>
+      <button type="button" class="btn btn-info" onclick="btn3()">3</button>
+      <button type="button" class="btn btn-info" onclick="btn4()">4</button>
+    </div>
+  </div>
+
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="all.min.js"></script>
+  <script src="qlsv.js"></script>
+
+</body>
+
+</html>

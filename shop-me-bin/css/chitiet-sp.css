@@ -1,0 +1,430 @@
+#banner {
+    max-width: 100%;
+}
+/* -----------link đường dẫn ------------------ */
+.text-link {
+    margin-top: 93px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.text-link a {
+    color: black;
+    text-decoration: none;
+} 
+.min-box {
+    color: #1076b9;
+    font-weight: bold;
+}
+
+/* ------------------------item details---------------------- */
+.item-view {
+    margin-top: 15px;
+}
+
+.item-img img {
+    max-width: 100%;
+    border-radius: 7px;
+}
+.item-img-simple-mobile {
+    margin-top: 10px;
+    padding: 10px;
+}
+.item-img-desktop {
+    display: none;
+    cursor: pointer;
+}
+.item-img-simple-desktop img {
+    margin-bottom: 10px;
+    
+}
+.item-img-simple-desktop img:hover {
+    box-shadow: 0px 0px 3px 0px rgb(21, 92, 122);
+}
+
+.detail-main-content {
+    font-size: 14px;
+}
+.detail-main-title .text {
+    font-size: 18px;
+    color: black;
+}
+.detail-main-title .cart {
+    font-size: 16px;
+    font-weight: bold;
+    color: #18A0FB;
+    margin-top: 10px;
+}
+.msp, .stocking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.stocking img {
+    margin-right: 5px;
+}
+.origin, .color-size .size {
+    margin: 15px 0px;
+}
+.detail-main-btn button {
+    width: 100%;
+    background-color: #18A0FB;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    padding: 10px;
+    border-radius: 7px;
+}
+.detail-normal {
+    margin-top: 25px;
+}
+.normal {
+    margin: 15px 0px;
+}
+.tick-line1 img {
+    margin-right: 5px;
+}
+.tick-line1 span {
+    font-weight: bold;
+    font-size: 14px;
+}
+.tick-line2 span {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.detail-use {
+    margin-top: 20px;
+}
+.use-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+.use-content {
+    font-size: 13px;
+}
+.use {
+    margin-bottom: 10px;
+}
+/* --------------------------items-------------------------------- */
+.col-6 img {
+    max-width: 100%;
+}
+.item-sell img {
+    height: 30px;
+}
+.item-box {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.item-box:hover #item-mask {
+    opacity: 0.4;
+}
+.item-box:hover #item-view {
+    bottom: 15px;
+    
+}
+#item-mask {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: black;
+    transition: 0.3s;
+    display: none;
+}
+#item-view {
+    color: white;
+    background-color: black;
+    font-size: 13px;
+    text-align: center;
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 30px;
+    bottom: -35px;
+    transform: translateX(-50%);
+    border: none;
+    transition: 0.3s;
+    left: 50%;
+    display: none;
+}
+#item-view:hover {
+    background-color: #18A0FB;
+}
+.item-info1 {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.item-info2 span {
+    font-size: 13px;
+}
+
+.item-info2 {
+    display: none;
+}
+.item-price {
+    font-weight: bold;
+    color: rgb(233, 69, 69);
+}
+.item-price .span-off {
+    font-weight: normal;
+    color: rgb(39, 39, 39);
+}
+.item-addCart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 14px;
+}
+.item-addCart button {  
+    border: none;
+    height: 30px;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+}
+.item-addCart button:hover {
+    background-color: rgb(99, 83, 83);
+}
+.addCart {
+    width: 70%;
+    background-color: rgb(233, 69, 69);
+    font-size: 14px;
+}
+.addCart a {
+    color: white;
+    text-decoration: none;
+}
+.addCart-icon {
+    width: 29%;
+    background-color: #18A0FB;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-name a {
+    text-decoration: none;
+    color: black;
+}
+.item-name a:hover {
+    color: #1171b1;
+}
+
+.doing {
+    height: 35px;
+    width: 170px;
+    font: 14px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 35px;
+    color:black;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.doing-box2 {
+    height: 100%;
+    background: linear-gradient(to left, #F8B49F, #ffffff);;
+    width: 160px;
+    text-align: center;
+    border-radius: 0px 7px 7px 0px;
+}
+
+/* ------------------change img details----------------------- */
+
+.col-3.col-sm-3.col-md-3.col-lg-3.col-xl-3 img {
+    cursor: pointer;
+}
+
+/* --------------------button check color--------------------------- */
+.color-size .color, .color-size .size {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+.color-btn-zone {
+    position: relative;
+    left: 13px;
+    top: 5px;
+}   
+.size-btn-zone {
+    position: relative;
+    left: 19px;
+    top: 5px;
+}                           
+.toggle {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+    
+}
+.toggle input[type="checkbox"] {
+    display: none;
+}
+.toggle .tick-1 {
+    background-color: #22243d;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 7px;
+}
+.toggle .tick-2 {
+    background-color: #98aba9;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 7px;
+}
+.toggle .tick-3 {
+    background-color: #f0be1c;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 7px;
+}
+.toggle .tick-1:before,
+.toggle .tick-2:before,
+.toggle .tick-3:before {
+    content: "";
+    height: 12px;
+    width: 20px;
+    position: absolute;
+    transform: rotate(-45deg);
+    background-color: transparent;
+    border-left: 5px solid white;
+    border-bottom: 5px solid white;
+    border-radius: 7px;
+    display: none;
+    left: 5px;
+    top: 8px;
+}
+.toggle input[type="checkbox"]:checked + .tick-1:before,
+.toggle input[type="checkbox"]:checked + .tick-2:before,
+.toggle input[type="checkbox"]:checked + .tick-3:before {
+    display: block;
+}
+
+.tick-s, .tick-m, .tick-l, .tick-xl {
+    text-align: center;
+    line-height: 30px;
+}
+.toggle .tick-s, .toggle .tick-m, .toggle .tick-l, .toggle .tick-xl {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 7px;
+    background-color: transparent;
+}
+.toggle .tick-s:before, .toggle .tick-m:before, .toggle .tick-l:before, .toggle .tick-xl:before  {
+    content: "";
+    width: 103%;
+    height: 103%;
+    position: absolute;
+    background-color: #ff6666;
+    border-radius: 7px;
+    display: none;
+}
+.toggle input[type="checkbox"]:checked + .tick-s:before,
+.toggle input[type="checkbox"]:checked + .tick-m:before,
+.toggle input[type="checkbox"]:checked + .tick-l:before,
+.toggle input[type="checkbox"]:checked + .tick-xl:before {
+    display: block;
+    z-index: -1;
+}
+.video {
+    padding-top: 33px;
+    display: none;
+}
+.video iframe {
+    width: 100%;
+    border-radius: 7px;
+    height: 280px;
+}
+.video-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------MEDIA---------------------------------- */
+@media (min-width:425px) {
+    .text-link {
+        margin-top: 98px;
+    }
+}
+@media (min-width:768px) {
+    .detail-main-title.text hr {
+        display: none;
+    }
+}
+@media (min-width:992px) {
+    .item-img-desktop, .video {
+        display: block;
+    }
+    .item-img-mobile {
+        display: none;
+    }
+    .text-link {
+        margin-top: 100px;
+    }
+    .min-box {
+        background-color: #80B5E1;
+        color: white;  
+        text-align: center;
+        border-radius: 30px;
+        margin-left: 5px;
+        padding: 5px;
+    }
+    #item-mask, #item-view {
+        display: block;
+    }
+}
+@media (min-width:1024px) {
+    .detail-main-title .text {
+        font-size: 20px;
+}
+    .detail-main-title .cart {
+        font-size: 18px;
+    }
+    .detail-main-btn button {
+        font-size: 18px;
+    }
+    .detail-main-btn button:hover {
+        background-color: #1076b9;
+    }
+    .tick-line1 span {
+        font-size: 16px;
+    }
+    .tick-line2 span {
+        font-size: 14px;
+    }
+    .use-title {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .use-content {
+        font-size: 14px;
+    }
+}

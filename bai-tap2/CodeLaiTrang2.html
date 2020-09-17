@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CODE LẠI TRANG WEB</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.CAP{
+			color: black; font-family: arial; font-size: 25px; font-style: bold
+		}
+		#id1{
+			color: gray; font-family: arial; font-size: 15px
+		}
+	</style>
+</head>
+<body>
+<p class="CAP">Những lỗi cơ bản trong lập trình mà developer nên tránh</p>
+<p id="id1">10 tháng 01, 2020 </p>
+<hr>
+<p>Không lập trình viên nào code mà không có bug. Tuy nhiên có rất nhiều lỗi cơ bản chúng ta nên tránh để tạo ra ít bug hơn, code sạch và trong sáng hơn, dễ bảo trì hơn, đỡ bị ăn chửi hơn, ...</p>
+<p class="CAP">1. Xử lý quá nhiều thứ trong một function</p>
+<p>Theo nguyên tắc <a href="https://en.wikipedia.org/wiki/Single_responsibility_principle" target="_blank">Single Responsibility</a>, một function chỉ nên thực hiện một và chỉ một nhiệm vụ duy nhất. Nhiều lập trình viên hay viết một function vừa lấy dữ liệu, xử lý dữ liệu và hiển thị dữ liệu. Thay vì như vậy, hãy chia nhỏ function này ra làm 3 function: Function lấy dữ liệu, function xử lý dữ liệu và function hiển thị dữ liệu.<br>
+Việc giữ một function chỉ tập trung thực hiện một nhiệm vụ sẽ giúp code dễ đọc và dễ bảo trì hơn. Như ví dụ trên, giả sử API để lấy dữ liệu bị thay đổi thì ta chỉ cần cập nhật lại function lấy dữ liệu, không bị ảnh hưởng đến các thao tác ở sau.</p>
+<p class="CAP">2. Code bị comment</p>
+<p>Trong một ứng dụng lớn có nhiều lập trình viên tham gia, nhiều khi bạn sẽ thấy có các hàm, các đoạn code lớn bị comment. Bạn sẽ không hiểu đoạn code bị comment này để làm gì, ý đồ của tác giả là gì. Các lập trình viên khác có thể sẽ không dám xoá đoạn code này vì có thể tác giả của đoạn comment còn cần đến nó.<br>
+Nếu gặp trường hợp như vậy và project có sử dụng hệ thống quản lý code như git, svn, ... thì hãy mạnh dạn xoá đoạn code này đi, code sẽ trở nên sạch đẹp hơn. Còn sau này nếu tác giả của đoạn code đó muốn tìm lại thì họ sẽ phải tự tìm trong các commit cũ.</p>
+<p class="CAP">3. Đặt tên biến, tên hàm không rõ ràng</p>
+<p>Đặt tên biến là một công việc khó nhưng cũng rất quan trọng. Một tên biến rõ ràng sẽ giúp việc đọc code trở nên dễ dàng, dễ hiểu.<br>
+Hãy đặt tên biến mô tả đúng chức năng, ý nghĩa của nó, dài một chút cũng được. Tránh đặt tên biến kiểu viết tắt (trừ trường hợp phổ biến hoặc đã thống nhất từ trước) hoặc tên biến không có ý nghĩa như a, b, c, ...</p>
+<p class="CAP">4. Magic number và string</p>
+<p>Magic number và string là các giá trị duy nhất được sử dụng nhiều lần trong ứng dụng mà không có giải thích ý nghĩa rõ ràng. Những giá trị này hoàn toàn có thể thay thế bằng các biến (với điều kiện biến phải được đặt tên một cách rõ ràng).</p>
+<p>Ví dụ với đoạn code sau:</p>
+<p>
+	<pre>
+	for ($i = 1; $i <= 52; $i++) {
+    ...
+}
+	</pre>
+</p>
+<p>
+Trong ví dụ trên thì 52 là một <b>magic number</b>, và người đọc code sẽ không hiểu được 52 có ý nghĩa là gì. Thậm chí kể cả tác giả đoạn code, sau một thời gian quay lại đọc code của mình cũng không hiểu, phải dò lại toàn bộ chương trình.
+</p>
+<p>Đoạn code trên có thể viết lại như sau:</p>
+<p>
+	<pre>
+	$cardDeckSize = 52;
+for ($i = 1; $i <= $cardDeckSize; $i++) {
+    ...
+}
+	</pre>
+</p>
+<p>Như vậy đọc đoạn code này sẽ hiểu ngay là đang thực hiện một vòng lặp qua từng quân bài trong bộ bài và 52 có nghĩa là số lá bài trong bộ bài. Ở các phần bên dưới cũng có thể dùng lại biến $cardDeckSize và khi cần thay đổi giá trị số lượng lá bài trong bộ bài ta cũng chỉ cần thay đổi giá trị của biến này một lần duy nhất thay vì phải sửa nhiều chỗ.</p>
+<p>Tương tự với number, chúng ta cũng có <b>magic string</b>:</p>
+<p>
+	<pre>
+	if (userPasswordIsValid($user, "6yP4cZ".$password)) {
+    ...
+}
+	</pre>
+</p>
+<p>Thay vì viết như trên ta viết lại:</p>
+<p>
+	<pre>
+	$salt = "6yP4cZ";
+if (userPasswordIsValid($user, $salt.$password)) {
+    ...
+}
+	</pre>
+</p>
+<p>và code sẽ trở nên dễ hiểu hơn.</p>
+<p class="CAP">5. Code format lộn xộn</p>
+<p>
+Với những lập trình viên không có kinh nghiệm và cẩu thả thì họ sẽ viết code lộn xộn, không có format. Code không format sẽ rất khó đọc và dễ dẫn đến code sai cú pháp và rất khó debug. Ví dụ như code HTML có thẻ mở mà không có thẻ đóng dẫn đến sai cấu trúc code làm hỏng cả CSS, lỗi này cũng khó debug vì dù code sai thì cũng sẽ không báo lỗi lên trình duyệt.<br>
+Đa số các IDE hoặc code editor hiện đại đều có hỗ trợ chức năng format code theo từng ngôn ngữ, hoặc là người dùng chủ động cài thêm các plugin, extension hỗ trợ cho việc format code. Trong một project nếu các lập trình viên dùng chung một chuẩn format code cũng sẽ giúp code đồng bộ và ít bị xung đột.
+</p>
+<p class="CAP">6. Hard code</p>
+<p>
+Hard code là nhập dữ liệu trực tiếp vào trong source code, dữ liệu này bị fix cứng và không thay đổi, cấu hình được.<br>
+Trong một số trường hợp chúng ta vẫn dùng hard code, tuy nhiên nếu code của bạn bị hard code quá nhiều tức là đang có vấn đề. Thay vì hard code dữ liệu trong source code, hãy tách chúng ra bằng cách lấy dữ liệu qua file cấu hình, lấy từ cơ sở dữ liệu hoặc API, hay qua biến môi trường, ...
+</p>
+<p><i>Bài viết được biên dịch lại từ <a href="https://medium.com/better-programming/common-coding-mistakes-you-should-avoid-441f9e51faea" target="_blank">medium.com.</a></i></p>
+<hr>
+<p>
+Ngày 3/2/2020, Techmaster khai giảng khoá <a href="https://techmaster.vn/lo-trinh/ce3/lo-trinh-dao-tao-web-frontend-chuyen-sau-6-5-thang-cam-ket-viec-lam" target="_blank">Lộ trình đào tạo Web Frontend chuyên sâu (6.5 tháng - cam kết việc làm)</a> tại cơ sở số 48 Tố Hữu, Hà Nội. Khoá học dành cho bất cứ ai mong muốn xây dựng sự nghiệp của mình với lĩnh vực lập trình CNTT về mảng Web Frontend. Không yêu cầu kiểm tra đầu vào.<br>
+Tham khảo thêm lịch khai giảng các khoá học <a href="https://techmaster.vn/trungtam/lich-khai-giang" target="_blank">tại đây</a>
+</p>
+</body>
+</html>

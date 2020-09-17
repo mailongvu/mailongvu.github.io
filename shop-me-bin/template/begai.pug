@@ -1,0 +1,575 @@
+extends template-part/layout.pug
+block style
+    link(rel="stylesheet", href="css/begai-style.css")
+block title
+    title Bé gái
+//- block banner
+//-     banner
+//-         .container(data-aos="fade-up")
+//-             img(src="img/girl/begai-banner.jpg", alt="Banner bé gái", id="banner")
+
+block content
+    //- -----------------------------filter mobile-------------------------------
+    #filter-mobile
+        .filter-cancel
+            img#filter-cancel(src="img/index/filter-cancel.svg", alt="", onclick="cancelFilterMobile()")
+        .filter-close
+            img#close-filter(src="img/index/close-filter.svg", alt="", onclick="filterMobileClose()")
+        .category
+            span Theo thể loại
+            .check-category
+                input#input01.check-mobile(type="checkbox", name="")
+                label(for="input01") Bodysuit bộ rời
+            .check-category
+                input#input02.check-mobile(type="checkbox", name="")
+                label(for="input02") Bodysuit bộ liền
+            .check-category
+                input#input03.check-mobile(type="checkbox", name="")
+                label(for="input03") Váy, đầm
+            .check-category
+                input#input04.check-mobile(type="checkbox", name="")
+                label(for="input04") Áo
+            .check-category
+                input#input05.check-mobile(type="checkbox", name="")
+                label(for="input05") Quần
+            .check-category
+                input#input06.check-mobile(type="checkbox", name="")
+                label(for="input06") Đồ ngủ
+            .check-category
+                input#input07.check-mobile(type="checkbox", name="")
+                label(for="input07") Đồ bơi
+            hr
+        .category
+            span Theo giá tiền
+            .input-cart
+                .input-cart-line
+                    span Từ
+                    input.cart-mobile(type="text", name="", placeholder="1.000")
+                .input-cart-line
+                    span Đến
+                    input.cart-mobile(type="text", name="", placeholder="1.000.000")
+            hr
+        .category
+            span Theo kích cỡ
+            .check-category
+                input#input08.check-mobile(type="checkbox", name="")
+                label(for="input08") Trẻ sơ sinh
+            .check-category
+                input#input09.check-mobile(type="checkbox", name="")
+                label(for="input09") Trẻ 3 tháng
+            .check-category
+                input#input10.check-mobile(type="checkbox", name="")
+                label(for="input10") Trẻ 6 tháng
+            .check-category
+                input#input11.check-mobile(type="checkbox", name="")
+                label(for="input11") Trẻ 9 tháng
+            .check-category
+                input#input12.check-mobile(type="checkbox", name="")
+                label(for="input12") Trẻ 12 tháng
+            .check-category
+                input#input13.check-mobile(type="checkbox", name="")
+                label(for="input13") Từ 2 đến 4 tuổi
+            .check-category
+                input#input14.check-mobile(type="checkbox", name="")
+                label(for="input14") Từ 4 đến 6 tuổi
+
+    .container#begai-content
+        .text-link
+            a(href="index.html") Trang chủ &rsaquo;&nbsp;
+            .min-box Bé gái
+        .filter-zone    
+            .filter-text
+                span Sắp xếp:
+                .filter-az
+                    select#az(name="")
+                        option(value="Giảm giá") Free ship
+                        option(value="Giảm giá") Hàng mới
+                        option(value="Giảm giá") Giảm giá
+                        option(value="Bán chạy") Bán chạy
+                        option(value="Giá thấp") Giá thấp
+                        option(value="Giá cao") Giá cao
+            .filter-btn(onclick="filterMobileOpen()")
+                img(src="img/index/filter.svg", alt="Lọc sản phẩm")
+                span Lọc
+            .filter-title
+                .title-text
+                    span Lọc sản phẩm
+                .title-del(onclick="cancelFilterDesktop()")
+                    span Bỏ lọc
+        .item            
+                .row
+                    .col-md-3.col-lg-2
+                        #filter-desktop
+                            .category
+                                span Theo thể loại
+                                .check-category
+                                    input#desktop01.check-desktop(type="checkbox", name="")
+                                    label(for="desktop01") Bodysuit bộ rời
+                                .check-category
+                                    input#desktop02.check-desktop(type="checkbox", name="")
+                                    label(for="desktop02") Bodysuit bộ liền
+                                .check-category
+                                    input#desktop03.check-desktop(type="checkbox", name="")
+                                    label(for="desktop03") Váy, đầm
+                                .check-category
+                                    input#desktop04.check-desktop(type="checkbox", name="")
+                                    label(for="desktop04") Áo
+                                .check-category
+                                    input#desktop05.check-desktop(type="checkbox", name="")
+                                    label(for="desktop05") Quần
+                                .check-category
+                                    input#desktop06.check-desktop(type="checkbox", name="")
+                                    label(for="desktop06") Đồ ngủ
+                                .check-category
+                                    input#desktop07.check-desktop(type="checkbox", name="")
+                                    label(for="desktop07") Đồ bơi
+                                hr
+                            .category
+                                span Theo giá tiền
+                                .input-cart
+                                    .input-cart-line
+                                        span Từ
+                                        input.cart-desktop(type="text", name="", placeholder="1.000")
+                                    .input-cart-line
+                                        span Đến
+                                        input.cart-desktop(type="text", name="", placeholder="1.000.000")
+                                hr
+                            .category
+                                span Theo kích cỡ
+                                .check-category
+                                    input#desktop08.check-desktop(type="checkbox", name="")
+                                    label(for="desktop08") Trẻ sơ sinh
+                                .check-category
+                                    input#desktop09.check-desktop(type="checkbox", name="")
+                                    label(for="desktop09") Trẻ 3 tháng
+                                .check-category
+                                    input#desktop10.check-desktop(type="checkbox", name="")
+                                    label(for="desktop10") Trẻ 6 tháng
+                                .check-category
+                                    input#desktop11.check-desktop(type="checkbox", name="")
+                                    label(for="desktop11") Trẻ 9 tháng
+                                .check-category
+                                    input#desktop12.check-desktop(type="checkbox", name="")
+                                    label(for="desktop12") Trẻ 12 tháng
+                                .check-category
+                                    input#desktop13.check-desktop(type="checkbox", name="")
+                                    label(for="desktop13") Từ 2 đến 4 tuổi
+                                .check-category
+                                    input#desktop14.check-desktop(type="checkbox", name="")
+                                    label(for="desktop14") Từ 4 đến 6 tuổi
+                    .col-md-9.col-lg-10
+                        .row#item-girl
+                            .col-6.col-md-4.col-lg-3
+                                .item-box
+                                    a(href="chitiet-sp.html")
+                                        img(src="img/girl/17.jpg", alt="ảnh 17")
+                                    #item-mask
+                                    a(href="chitiet-sp.html")
+                                        #item-view Chi tiết
+                                .item-info
+                                    .item-info1
+                                        .item-name
+                                            a(href="chitiet-sp.html")
+                                                span Áo bơi sọc dưa hấu 
+                                        .item-price
+                                            span 210.000 vnđ
+                                            |  
+                                            span.span-off |  -35%
+                                    .item-info2
+                                        .item-sell
+                                            img(src="img/index/free-ship.svg", alt="Miễn phí vận chuyển")
+                                    .item-addCart
+                                        button.addCart 
+                                            a(href="giohang.html") Mua ngay
+                                        button.addCart-icon
+                                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')
+                            .col-6.col-md-4.col-lg-3
+                                .item-box
+                                    a(href="chitiet-sp.html")
+                                        img(src="img/girl/02.jpg", alt="ảnh 02")
+                                    #item-mask
+                                    a(href="chitiet-sp.html")
+                                        #item-view Chi tiết
+                                .item-info
+                                    .item-info1
+                                        .item-name
+                                            a(href="chitiet-sp.html")
+                                                span Bodysuit bộ vàng
+                                        .item-price
+                                            span 170.000 vnđ
+                                            |  
+                                            span.span-off |  -20%
+                                    .item-info2
+                                        .item-sell
+                                            img(src="img/index/coupon.svg", alt="coupon giảm giá")
+                                            span &#32;10k
+                                    .item-addCart
+                                        button.addCart 
+                                            a(href="giohang.html") Mua ngay
+                                        button.addCart-icon
+                                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')
+                            .col-6.col-md-4.col-lg-3
+                                .item-box
+                                    a(href="chitiet-sp.html")
+                                        img(src="img/girl/03.jpg", alt="ảnh 03")
+                                    #item-mask
+                                    a(href="chitiet-sp.html")
+                                        #item-view Chi tiết
+                                .item-info
+                                    .item-info1
+                                        .item-name
+                                            a(href="chitiet-sp.html")
+                                                span Váy thủy thủ trắng
+                                        .item-price
+                                            span 150.000 vnđ
+                                            |  
+                                            span.span-off |  -45%
+                                    .item-info2
+                                        .item-sell
+                                            img(src="img/index/free-ship.svg", alt="")
+                                    .item-addCart
+                                        button.addCart 
+                                            a(href="giohang.html") Mua ngay
+                                        button.addCart-icon
+                                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')
+                            .col-6.col-md-4.col-lg-3
+                                .item-box
+                                    a(href="chitiet-sp.html")
+                                        img(src="img/girl/04.jpg", alt="ảnh 04")
+                                    #item-mask
+                                    a(href="chitiet-sp.html")
+                                        #item-view Chi tiết
+                                .item-info
+                                    .item-info1
+                                        .item-name
+                                            a(href="chitiet-sp.html")
+                                                span Váy hồng nơ xinh
+                                        .item-price
+                                            span 170.000 vnđ
+                                            |  
+                                            span.span-off |  -35%
+                                    .item-info2
+                                        .item-sell
+                                            img(src="img/index/coupon.svg", alt="coupon giảm giá")
+                                            span &#32;30k
+                                    .item-addCart
+                                        button.addCart 
+                                            a(href="giohang.html") Mua ngay
+                                        button.addCart-icon
+                                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')
+                            .col-6.col-md-4.col-lg-3
+                                .item-box
+                                    a(href="chitiet-sp.html")
+                                        img(src="img/girl/05.jpg", alt="ảnh 05")
+                                    #item-mask
+                                    a(href="#")
+                                        #item-view Chi tiết
+                                .item-info
+                                    .item-info1
+                                        .item-name
+                                            a(href="#")
+                                                span Váy chấm bi nơ xanh
+                                        .item-price
+                                            span 245.000 vnđ
+                                            |  
+                                            span.span-off |  -30%
+                                    .item-info2
+                                        .item-sell
+                                            img(src="img/index/coupon.svg", alt="coupon giảm giá")
+                                            span &#32;15k
+                                    .item-addCart
+                                        button.addCart 
+                                            a(href="giohang.html") Mua ngay
+                                        button.addCart-icon
+                                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')
+                            .col-6.col-md-4.col-lg-3
+                                .item-box
+                                    a(href="chitiet-sp.html")
+                                        img(src="img/girl/06.jpg", alt="ảnh 06")
+                                    #item-mask
+                                    a(href="#")
+                                        #item-view Chi tiết
+                                .item-info
+                                    .item-info1
+                                        .item-name
+                                            a(href="#")
+                                                span Váy chấm bi trắng
+                                        .item-price
+                                            span 210.000 vnđ
+                                            |  
+                                            span.span-off |  -40%
+                                    .item-info2
+                                        .item-sell
+                                            img(src="img/index/free-ship.svg", alt="Miễn phí vận chuyển")
+                                    .item-addCart
+                                        button.addCart 
+                                            a(href="giohang.html") Mua ngay
+                                        button.addCart-icon
+                                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')
+                            .col-6.col-md-4.col-lg-3
+                                .item-box
+                                    a(href="chitiet-sp.html")
+                                        img(src="img/girl/07.jpg", alt="ảnh 07")
+                                    #item-mask
+                                    a(href="#")
+                                        #item-view Chi tiết
+                                .item-info
+                                    .item-info1
+                                        .item-name
+                                            a(href="#")
+                                                span Váy chấm bi xanh
+                                        .item-price
+                                            span 110.000 vnđ
+                                            |  
+                                            span.span-off |  -35%
+                                    .item-info2
+                                        .item-sell
+                                            img(src="img/index/coupon.svg", alt="coupon giảm giá")
+                                            span &#32;25k
+                                    .item-addCart
+                                        button.addCart 
+                                            a(href="giohang.html") Mua ngay
+                                        button.addCart-icon
+                                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')
+                            .col-6.col-md-4.col-lg-3
+                                .item-box
+                                    a(href="chitiet-sp.html")
+                                        img(src="img/girl/08.jpg", alt="ảnh 08")
+                                    #item-mask
+                                    a(href="#")
+                                        #item-view Chi tiết
+                                .item-info
+                                    .item-info1
+                                        .item-name
+                                            a(href="#")
+                                                span Váy hồng kẻ sọc
+                                        .item-price
+                                            span 160.000 vnđ
+                                            |  
+                                            span.span-off |  -25%
+                                    .item-info2
+                                        .item-sell
+                                            img(src="img/index/free-ship.svg", alt="")
+                                    .item-addCart
+                                        button.addCart 
+                                            a(href="giohang.html") Mua ngay
+                                        button.addCart-icon
+                                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')
+                            .col-6.col-md-4.col-lg-3
+                                .item-box
+                                    a(href="chitiet-sp.html")
+                                        img(src="img/girl/09.jpg", alt="ảnh 09")
+                                    #item-mask
+                                    a(href="#")
+                                        #item-view Chi tiết
+                                .item-info
+                                    .item-info1
+                                        .item-name
+                                            a(href="#")
+                                                span Váy nơ xám nâu
+                                        .item-price
+                                            span 330.000 vnđ
+                                            |  
+                                            span.span-off |  -20%
+                                    .item-info2
+                                        .item-sell
+                                            img(src="img/index/coupon.svg", alt="coupon giảm giá")
+                                            span &#32;20k
+                                    .item-addCart
+                                        button.addCart 
+                                            a(href="giohang.html") Mua ngay
+                                        button.addCart-icon
+                                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')
+                            .col-6.col-md-4.col-lg-3
+                                .item-box
+                                    a(href="chitiet-sp.html")
+                                        img(src="img/girl/10.jpg", alt="ảnh 10")
+                                    #item-mask
+                                    a(href="#")
+                                        #item-view Chi tiết
+                                .item-info
+                                    .item-info1
+                                        .item-name
+                                            a(href="#")
+                                                span Váy đai xám nâu
+                                        .item-price
+                                            span 350.000 vnđ
+                                            |  
+                                            span.span-off |  -30%
+                                    .item-info2
+                                        .item-sell
+                                            img(src="img/index/coupon.svg", alt="coupon giảm giá")
+                                            span &#32;10k
+                                    .item-addCart
+                                        button.addCart 
+                                            a(href="giohang.html") Mua ngay
+                                        button.addCart-icon
+                                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')
+                            .col-6.col-md-4.col-lg-3
+                                .item-box
+                                    a(href="chitiet-sp.html")
+                                        img(src="img/girl/11.jpg", alt="ảnh 11")
+                                    #item-mask
+                                    a(href="#")
+                                        #item-view Chi tiết
+                                .item-info
+                                    .item-info1
+                                        .item-name
+                                            a(href="#")
+                                                span Bodysuit áo xanh
+                                        .item-price
+                                            span 150.000 vnđ
+                                            |  
+                                            span.span-off |  -50%
+                                    .item-info2
+                                        .item-sell
+                                            img(src="img/index/free-ship.svg", alt="")
+                                    .item-addCart
+                                        button.addCart 
+                                            a(href="giohang.html") Mua ngay
+                                        button.addCart-icon
+                                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')
+                            .col-6.col-md-4.col-lg-3
+                                .item-box
+                                    a(href="chitiet-sp.html")
+                                        img(src="img/girl/12.jpg", alt="ảnh 12")
+                                    #item-mask
+                                    a(href="#")
+                                        #item-view Chi tiết
+                                .item-info
+                                    .item-info1
+                                        .item-name
+                                            a(href="#")
+                                                span Bodysuit bộ liền cam
+                                        .item-price
+                                            span 130.000 vnđ
+                                            |  
+                                            span.span-off |  -20%
+                                    .item-info2
+                                        .item-sell
+                                            img(src="img/index/free-ship.svg", alt="")
+                                    .item-addCart
+                                        button.addCart 
+                                            a(href="giohang.html") Mua ngay
+                                        button.addCart-icon
+                                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')
+                            .col-6.col-md-4.col-lg-3
+                                .item-box
+                                    a(href="chitiet-sp.html")
+                                        img(src="img/girl/13.jpg", alt="ảnh 13")
+                                    #item-mask
+                                    a(href="chitiet-sp.html")
+                                        #item-view Chi tiết
+                                .item-info
+                                    .item-info1
+                                        .item-name
+                                            a(href="chitiet-sp.html")
+                                                span Bộ động vật dễ thương
+                                        .item-price
+                                            span 249.000 vnđ
+                                            |  
+                                            span.span-off |  -20%
+                                    .item-info2
+                                        .item-sell
+                                            img(src="img/index/coupon.svg", alt="coupon giảm giá")
+                                            span &#32;25k
+                                    .item-addCart
+                                        button.addCart 
+                                            a(href="giohang.html") Mua ngay
+                                        button.addCart-icon
+                                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')
+                            .col-6.col-md-4.col-lg-3
+                                .item-box
+                                    a(href="chitiet-sp.html")
+                                        img(src="img/girl/14.jpg", alt="ảnh 14")
+                                    #item-mask
+                                    a(href="chitiet-sp.html")
+                                        #item-view Chi tiết
+                                .item-info
+                                    .item-info1
+                                        .item-name
+                                            a(href="chitiet-sp.html")
+                                                span Bộ hoạt hình hồng xinh
+                                        .item-price
+                                            span 219.000 vnđ
+                                            |  
+                                            span.span-off |  -10%
+                                    .item-info2
+                                        .item-sell
+                                            img(src="img/index/free-ship.svg", alt="Miễn phí vận chuyển")
+                                    .item-addCart
+                                        button.addCart 
+                                            a(href="giohang.html") Mua ngay
+                                        button.addCart-icon
+                                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')
+                            .col-6.col-md-4.col-lg-3
+                                .item-box
+                                    a(href="chitiet-sp.html")
+                                        img(src="img/girl/15.jpg", alt="ảnh 15")
+                                    #item-mask
+                                    a(href="chitiet-sp.html")
+                                        #item-view Chi tiết
+                                .item-info
+                                    .item-info1
+                                        .item-name
+                                            a(href="chitiet-sp.html")
+                                                span Đầm nơ kẻ xọc
+                                        .item-price
+                                            span 118.000 vnđ
+                                            |  
+                                            span.span-off |  -20%
+                                    .item-info2
+                                        .item-sell
+                                            img(src="img/index/coupon.svg", alt="coupon giảm giá")
+                                            span &#32;15k
+                                    .item-addCart
+                                        button.addCart 
+                                            a(href="giohang.html") Mua ngay
+                                        button.addCart-icon
+                                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')
+                            .col-6.col-md-4.col-lg-3
+                                .item-box
+                                    a(href="chitiet-sp.html")
+                                        img(src="img/girl/16.jpg", alt="ảnh 16")
+                                    #item-mask
+                                    a(href="chitiet-sp.html")
+                                        #item-view Chi tiết
+                                .item-info
+                                    .item-info1
+                                        .item-name
+                                            a(href="chitiet-sp.html")
+                                                span Áo sơ mi viền lá
+                                        .item-price
+                                            span 109.000 vnđ
+                                            |  
+                                            span.span-off |  -40%
+                                    .item-info2
+                                        .item-sell
+                                            img(src="img/index/free-ship.svg", alt="")
+                                    .item-addCart
+                                        button.addCart 
+                                            a(href="giohang.html") Mua ngay
+                                        button.addCart-icon
+                                            svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                                path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')        
+                        .next-page
+                            button#btn1 1
+                            button#btn2 2
+                            button#btn3 3
+                        .out-off
+                            span Bạn đã xem hết sản phẩm

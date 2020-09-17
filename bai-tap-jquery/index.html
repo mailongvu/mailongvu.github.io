@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="change">Change Theme</div>
+    <div id="box">
+        <div class="line">
+         <input type="text" class="monitor_show" disabled>
+        </div> 
+        <div class="line">
+            <input type="text" class="monitor_result" disabled>
+        </div>    
+        <div class="line">
+            <div class="cal" id="ac">AC</div>
+            <div class="cal" id="del">DEL</div>
+            <div class="cal" id="p100">%</div>
+            <div class="cal" id="divis" onclick="button('÷')">÷</div>
+        </div>
+        <div class="line">
+           <div class="numb" id="numb"  onclick="button(7)">7</div>
+           <div class="numb" id="numb"  onclick="button(8)">8</div>
+           <div class="numb" id="numb"  onclick="button(9)">9</div>           
+           <div class="cal" id="multi"  onclick="button('×')">×</div>
+        </div>
+        <div class="line">
+            <div class="numb" id="numb"  onclick="button(4)">4</div>
+            <div class="numb" id="numb"  onclick="button(5)">5</div>
+            <div class="numb" id="numb"  onclick="button(6)">6</div>
+            <div class="cal" id="subtraction"  onclick="button('-')">-</div>
+            
+        </div>
+        <div class="line">
+            <div class="numb" id="numb" onclick="button(1)">1</div>
+            <div class="numb" id="numb"  onclick="button(2)">2</div>
+            <div class="numb" id="numb" onclick="button(3)">3</div>
+            <div class="cal" id="sum" onclick="button('+')">+</div>
+        </div>
+        <div class="line">
+            <div class="numb" id="zero" onclick="button(0)">0</div>
+            <div class="numb" id="dots" onclick="button('.')">.</div>
+            <div class="cal" id="equal">=</div>
+        </div>
+        
+
+    </div>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>

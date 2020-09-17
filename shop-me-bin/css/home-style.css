@@ -1,0 +1,141 @@
+.boy-girl {
+    margin-top: 82px;
+}
+.boy-girl img,
+.sale-off img,
+.new-order img {
+    max-width: 100%;
+}
+.boy-girl .col-12,
+.new-order .col-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.boy-girl .row,
+.new-order .row {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.boy-zone, .girl-zone, .sale-zone, .sp-new, .sp-order {
+    position: relative;
+}
+
+/* -------------------- BUTTON --------------------- */
+.button-boy, .button-girl, .button-sale, .button-new, .button-order {
+    position: absolute;
+    height: 30px;
+    width: 80px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+}
+.button-boy {
+    top: 43%;
+    right: 18%;
+}
+.button-girl {
+    top: 43%;
+    left: 18%;
+}
+.button-sale {
+    top: 34%;
+    left: 27%;
+}
+.button-new {
+    top: 72%;
+    left: 63%;
+    background-color: #F2BAA9;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.button-order {
+    top: 20%;
+    left: 70%;
+    background-color: #80B5E1;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.front-face, .back-face {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.boy-zone .front-face {
+	background-color: #F2BAA9;
+}
+.boy-zone .back-face {
+	background-color: #f0a48c;
+    transform: rotateX(180deg);        
+}
+.girl-zone .front-face {
+	background-color: #80B5E1;
+}
+.girl-zone .back-face {
+	background-color: #68aae0;
+    transform: rotateX(180deg);        
+}
+.sale-zone .front-face {
+	background-color: #999692;
+}
+.sale-zone .back-face {
+	background-color: #999692;
+    transform: rotateX(180deg);        
+}
+.boy-zone:hover .flip, .girl-zone:hover .flip, .sale-zone:hover .flip  {
+    transform: rotateX(180deg);  
+}
+.sp-new .button-new, .sp-order .button-order {
+    transition: all 0.2s;
+}
+.sp-new:hover .button-new {
+    background-color: #f0a48c;
+}
+.sp-order:hover .button-order {
+    background-color: #68aae0;
+}
+
+
+/* -------------------- MEDIA --------------------- */
+@media (min-width:375px) {
+    .boy-girl {
+        margin-top: 90px;
+    }
+}
+@media (min-width:425px) {
+    .boy-girl {
+        margin-top: 98px;
+    }
+}
+@media  (min-width: 768px) {
+    #banner {
+        margin-top: 98px;
+    }
+    .boy-girl {
+        margin-top: 0px;
+    }
+    .button-sale {
+        top: 47%;
+        left: 36%;
+    }
+    .button-order {
+        left: 73%;
+    }
+@media (min-width:1024px) {
+    .button-boy, .button-girl, .button-sale, .button-new, .button-order {
+        position: absolute;
+        height: 40px;
+        width: 120px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+}
+}

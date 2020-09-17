@@ -1,0 +1,166 @@
+header
+    .header-top
+        .container-fluid
+            .container
+                .text#hotline
+                    span Hotline: 096.765.2510
+                input#gr-search(type="text" placeholder="Bạn cần tìm gì?")
+                .icon
+                    .icon-gr-search
+                        a(href="#")
+                            .icon-search
+                                svg.bi.bi-search(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                    path(fill-rule='evenodd' d='M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z')
+                                    path(fill-rule='evenodd' d='M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z')
+                                span Tìm kiếm
+                    
+                    .icon-account
+                        svg.bi.bi-person-circle(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                            path(d='M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z')
+                            path(fill-rule='evenodd' d='M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z')
+                            path(fill-rule='evenodd' d='M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z')
+                        span Tài khoản                
+                    .icon-cart
+                        svg.bi.bi-cart2(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                            path(fill-rule='evenodd' d='M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z')
+                        span 0
+    .header-main
+        .container-fluid
+            .container
+                .logo
+                    .menu-btn(onclick='menuList()')
+                        #menu-btnID
+                            svg.bi.bi-list(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                path(fill-rule='evenodd' d='M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z')
+                    a(href="index.html")
+                        img(src="img/header/logo-web.png", alt="logo trang web")
+                    
+                #menu-list
+                    .icon-account-mobile
+                        .account-mobile
+                            svg.bi.bi-person-circle(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                path(d='M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z')
+                                path(fill-rule='evenodd' d='M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z')
+                                path(fill-rule='evenodd' d='M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z')
+                            span Tài khoản
+                        .logout-mobile
+                            img(src="img/header/logout.svg", alt="")
+                    .title
+                        span DANH MỤC
+                        #list-close(onclick='menuList()')
+                            svg.bi.bi-arrow-left-square(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                path(fill-rule='evenodd' d='M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z')
+                                path(fill-rule='evenodd' d='M8.354 11.354a.5.5 0 0 0 0-.708L5.707 8l2.647-2.646a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708 0z')
+                                path(fill-rule='evenodd' d='M11.5 8a.5.5 0 0 0-.5-.5H6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5z')
+                    .list
+                        .list-link
+                            ul
+                                li
+                                    a#betrai(href="betrai.html") BÉ TRAI
+                                li
+                                    a#begai(href="begai.html") BÉ GÁI
+                                li
+                                    a#giamgia(href="giamgia.html") GIẢM GIÁ
+                                li
+                                    a#baiviet(href="bai-viet.html") BÀI VIẾT
+                                li
+                                    a#lienhe(href="lienhe.html") LIÊN HỆ
+
+    img#myBtn(src="img/index/top.svg", alt="", onclick="topFunction()", title="Go to top")
+
+    //- -----------------form login/register-----------------
+    #header-account
+        img(src="img/header/close.svg", alt="icon close popup", id="account-close")
+        .box-btn
+            button#btn-run
+            button.toggle-btn#login-btn(type='button') ĐĂNG NHẬP
+            button.toggle-btn#register-btn(type='button') ĐĂNG KÝ
+        form#login(action="")
+            .login-facebook
+                button.btn.btn-primary ĐĂNG NHẬP BẰNG FACEBOOK
+                span hoặc bằng cách khác
+                hr
+            .login-use
+                label(for="") Số điện thoại
+                input(type="text", name="phoneNumber", id="name")
+                span#name-span
+            .login-use.repo
+                label(for="") Mật khẩu
+                input(type="text", name="password", id="password")
+                img(src="img/header/eye.svg", alt="")
+                span#password-span
+            .login-use-checkbox
+                input#checkbox(type="checkbox", name="")    
+                label.remember(for="checkbox") Ghi nhớ tài khoản   
+            .login-submit
+                button.btn.btn-primary(type='submit') ĐĂNG NHẬP
+            .login-law
+                span Bạn quên mật khẩu? &#32;
+                a(href="" style = "color:#007bff") Lấy lại mật khẩu
+        form#register(action="")
+            .login-facebook
+                button.btn.btn-primary ĐĂNG KÝ BẰNG FACEBOOK
+                span hoặc bằng cách khác
+                hr
+            .login-use
+                label(for="") Số điện thoại
+                input(type="text", name="phonenumber", id="name-register")
+                span#name-register-span
+            .login-use
+                label(for="") Email
+                input(type="text", name="email", id="email")
+                span#email-span   
+            .login-use.repo
+                label(for="") Mật khẩu
+                input(type="text", name="passWord", id="password-register")
+                img(src="img/header/eye.svg", alt="")
+                span#password-register-span
+            .login-use.repo
+                label(for="") Nhập lại mật khẩu
+                input(type="text", name="passwordAgain", id="pass-again")
+                img(src="img/header/eye.svg", alt="")
+                span#pass-again-span  
+            .login-submit
+                button.btn.btn-primary(type='submit', style="margin-top:5px") TẠO TÀI KHOẢN
+            .login-law
+                span
+                    | Khi bấm TẠO TÀI KHOẢN, bạn đã đồng ý với các 
+                    a(href style="color:red") Quy định
+                    |  và 
+                    a(href style="color:red") Chính sách
+                    |  của Cửa hàng  
+    #mask-page
+    //- ---------------cart list----------------------
+.container  
+    .cart-container
+        #cart-zone
+            .cart-zone-title
+                span(style="font-weight:bold") GIỎ HÀNG CỦA BẠN
+                img(src="img/header/close.svg", alt="icon close popup", id="cart-close")
+            hr
+            .cart-header
+                span
+                .cart-name
+                    span 
+                .cart-price
+                    span 
+            hr
+            //- .cart-header
+            //-     img(src="img/boy/05.jpg", alt="ảnh sản phẩm")
+            //-     .cart-name
+            //-         span Bộ thu đông xám
+            //-     .cart-price
+            //-         span 230.000 vnđ
+            //- hr
+            //- .cart-header
+            //-     img(src="img/boy/11.jpg", alt="ảnh sản phẩm")
+            //-     .cart-name
+            //-         span Bodysuit áo rêu
+            //-     .cart-price
+            //-         span 230.000 vnđ
+            //- hr
+            //- .cart-sum
+            //-     span TỔNG CỘNG:&#32;
+            //-     span(style="color:#0e588a") 570.000 vnđ
+            a(href="giohang.html")
+                button THANH TOÁN 

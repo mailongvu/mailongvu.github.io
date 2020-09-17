@@ -1,0 +1,259 @@
+body {
+    max-width: 1200px;
+    margin: auto;
+    color: #626262;
+    font-family: Playfair Display;
+}
+
+a {
+    text-decoration: none;
+    color: #626262;
+}
+
+a:hover {
+    color: orange;
+    transition: 0.2s ease-in-out;
+}
+
+#minimo {
+    color: black;
+}
+
+#minimo:hover {
+    color: coral;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+button,
+h3 {
+    font-family: Ubuntu;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+input {
+    background-color: #f0f0f0;
+    border: none;
+    border-bottom: 1px solid #626262;
+    width: 399px;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 5px;
+}
+
+.send-icon {
+    position: absolute;
+    top: 0px;
+    left: 356px;
+    padding: 10px;
+}
+
+.container {
+    max-width: 1062px;
+    margin-top: 71px;
+    margin: auto;
+}
+
+.footer {
+    margin-top: 1372px;
+    height: 100px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .text {
+    margin-left: 150px;
+    display: inherit;
+}
+
+.footer .icon {
+    margin-right: 69px;
+    display: inherit;
+}
+
+.icon img,
+.icon p {
+    margin: 0px 10px;
+}
+
+#privacy {
+    margin-left: 14px;
+}
+
+.container-body {
+    margin-left: 151px;
+    max-width: 900px;
+}
+
+.text-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 71px;
+    text-transform: uppercase;
+}
+
+.text-header-left {
+    font-family: Inconsolata;
+    font-size: 30px;
+    line-height: 24px;
+    color: black;
+}
+
+.text-header-right {
+    font-size: 14px;
+    line-height: 24px;
+}
+.text-margin {
+    margin-right: 100px;
+}
+
+.banner-header img {
+    margin-top: 74px;
+    line-height: 0px;
+    max-width: 100%;
+}
+
+.container-post-first {
+    padding-top: 136px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.tag {
+    font-family: Ubuntu;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.container-signup {
+    margin-top: 126px;
+    height: 288px;
+    max-width: 1200px;
+    background-color: #f0f0f0;
+}
+
+#sign-up {
+    padding-top: 82px;
+    text-align: center;
+    margin: 0px;
+    letter-spacing: 5px;
+}
+
+.mail {
+    position: relative;
+    width: 399px;
+    margin-top: 84px;
+    margin-left: 404px;
+    align-items: center;
+}
+
+
+
+.container-post-second {
+    margin-top: 103px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 0px;
+}
+
+.container-loadmore {
+    margin-top: 170px;
+    width: 164px;
+    height: 61px;
+    border: 1px solid #626262;
+    color: #626262;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 368px;
+}
+
+a .container-loadmore:hover {
+    color: lightcoral;
+}
+
+.item-icon,
+.item-body {
+    transition: 0.5s;
+}
+
+.item-body:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 7px 1px rgb(130, 133, 133);
+}
+
+.item-icon:hover {
+    transform: scale(1.5);
+}
+
+.post2,
+.post4,
+.post6 {
+    margin-left: 60px;
+}
+
+@media (max-width: 700px) {
+.text-header {
+    text-align: center;
+    flex-direction: column;
+}
+.text-header-right {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+.text-margin {
+    margin-right: 0px;
+}
+.container-post-first, .container-post-second {
+    grid-template-columns: auto; 
+}
+
+.post2,
+.post4,
+.post6 {
+    margin-left: 0px;
+}
+.container-body {
+    margin: 10px;
+    max-width: 900px;
+}
+.container-loadmore {
+   
+    margin: auto;
+}
+.mail {
+    margin: auto;
+    
+}
+.item-body {
+    width: 100%;
+}
+.item-body:hover {
+    transform: scale(1);
+
+}
+.banner-header img {
+    max-width: 100%;
+    margin-top: 74px;
+    display: inline-block;
+}
+.footer .text {
+    margin-left: 10px;
+    display: inherit;
+}
+
+.footer .icon {
+    margin-right: 10px;
+    display: inherit;
+}
+}

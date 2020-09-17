@@ -1,0 +1,80 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	width: 1000px;
+	background-color: #FCFCFC;
+	margin: auto;
+	font-family: sans-serif;
+}
+ul{
+	padding-left: 0;
+	list-style-type: none;
+}
+a{
+	cursor: pointer;
+	color: #758BBC;
+	display: block;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 15px;
+}
+a:hover{
+	color: #F36D00;
+}
+span{
+	visibility: hidden;
+}
+a:hover span{
+	visibility: visible; 
+	color: #F36D00;
+
+}
+
+.menu-lv1 > li , .menu-lv2 > li, .menu-lv3 > li{
+	display: block;
+	position: relative;
+
+}
+.menu-lv1 > li{
+	width: 270px;
+}
+.menu-lv2 > li{
+	width: 190px;
+}
+.menu-lv3 > li{
+	width: 190px;
+}
+
+.menu-lv1 > li:hover{
+	background-color: #ECEFF1;
+}
+.menu-lv2 > li:hover{
+	background-color: #ECEFF1;
+}
+.menu-lv3 > li:hover{
+	background-color: #ECEFF1;
+}
+.menu-lv1 > li:hover .menu-lv2{
+	display: block;
+	box-shadow: 0.2px 0.2px 5px #dbdbdb;
+}
+.menu-lv2 > li:hover .menu-lv3{
+	display: block;
+	box-shadow: 0.2px 0.2px 5px #dbdbdb;
+}
+.menu-lv2, .menu-lv3{
+	display: block;
+	position: absolute;
+	top: 0px;
+	display: none;
+}
+
+.menu-lv2{
+	left: 270px;
+	width: 190px;
+}
+.menu-lv3{
+	left: 190px;
+	width: 190px;
+}

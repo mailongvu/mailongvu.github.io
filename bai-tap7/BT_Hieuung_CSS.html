@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HIỆU ỨNG CSS</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			width: 1000px;
+			margin: auto;
+		}
+
+		.tieude{
+			max-width: 100%;
+			height:40px;
+			line-height: 40px;
+			text-align: center;
+			background-color: lime;
+			box-shadow: 0px 5px 5px 0px #CD5C5C;
+		}
+		.bt1{
+			width: 100%;
+			position: relative;
+		}
+		.bt1 .login{
+			color: white;
+			background-color: blue;
+			font-family: arial;
+			width: 100px;
+			height: 60px;
+			line-height: 60px;
+			border-radius: 5%;
+			text-align: center;
+			transition: 2s;
+		}
+		.login:hover{
+			background-color: #F0E68C;
+			border-radius: 30%;
+			box-shadow: 0px 5px 5px 0px;
+		}
+		.bt2{
+			width: 100%;
+			float: left;
+		}
+		.bt2 .image{
+			width: 33.33333333%;
+			transition: 2s;
+		}
+		.image:hover{
+			transform: scale(1.2);
+		}
+
+		@keyframes heart {
+			0%  {transform: scale(1);}
+			20%  {transform: scale(1.2);}
+			40%  {transform: scale(0.5);}
+			60%  {transform: scale(1);}
+			80% {transform: scale(1.3);}
+			100% {transform: scale(1);}
+		}
+
+		.bt3{
+			animation: heart 5s ease infinite;
+		}
+		.box-bt4{
+			background-color: #DCDCDC;
+			width: 500px;
+			height: 250px;
+			position: absolute;
+		}
+		.coding {
+			width: 300px;
+			background-color: #DC143C;
+			border: 1px solid red;
+			color: white;
+			font-size: 50px;
+			text-align: center;
+			position: relative;
+			top: 96px;
+			left: 110px;
+			font-family: arial;
+			animation: coding 2s infinite;
+		}
+		.teaching{
+			width: 300px;
+			background-color: #6495ED;
+			border: 1px solid red;
+			color: white;
+			font-size: 50px;
+			text-align: center;
+			position: relative;
+			top: -78px;
+			left: 110px;
+			font-family: arial;
+			animation: teaching 2s infinite;
+			animation-delay: 2s;
+			opacity: 0;
+		}
+		.learning{
+			width: 300px;
+			background-color: #228B22;
+			border: 1px solid red;
+			color: white;
+			font-size: 50px;
+			text-align: center;
+			position: relative;
+			top: -138px;
+			left: 110px;
+			font-family: arial;
+			animation: learning 2s infinite;
+			animation-delay: 4s;
+			opacity: 0;
+		}
+		.start, .today{
+			width: 300px;
+			color: black;
+			font-size: 50px;
+			text-align: center;
+			position: relative;
+			font-family: arial;
+		}
+		.start{
+			bottom: 48px;
+			left: 111px;
+		}
+		.today{
+			top: 70px;
+			left: 111px;
+		}
+		@keyframes coding{
+			from{
+				opacity: 0;
+				top: 80px;
+				left: 111px;
+			}
+			to{
+				opacity: 1;
+				top: 96px;
+				left: 111px;
+			}
+		}
+		@keyframes teaching{
+			from{
+				opacity: 0;
+				top: -70px;
+				left: 111px;
+			}
+			to{
+				opacity: 1;
+				top: -78px;
+				left: 110px;
+			}
+		}
+		@keyframes learning{
+			from{
+				opacity: 0;
+				top: -70px;
+				left: 111px;
+			}
+			to{
+				opacity: 1;
+				top: -138px;
+				left: 110px;
+			}
+		}
+
+	</style>
+
+
+</head>
+<body>
+	<div class="tieude">
+		<h1>BÀI TẬP THỰC HÀNH HIỆU ỨNG CSS</h1>
+	</div>
+
+	<h1>BÀI THỰC HÀNH 1: TẠO LOGO</h1>
+	<div class="bt1">
+		<div class="bt1 login">L O G I N</div>
+	</div>
+
+	<h1>BÀI THỰC HÀNH 2: HIỆU ỨNG ẢNH</h1>
+	<div class="bt2">
+		<div class="bt2 image"><img src="ANH/01.jpg" border="2px" alt="ảnh 01" title="ảnh 01"></div>
+		<div class="bt2 image"><img src="ANH/02.jpg" border="2px" alt="ảnh 02" title="ảnh 02" ></div>
+		<div class="bt2 image"><img src="ANH/03.jpg" border="2px" alt="ảnh 03" title="ảnh 03" ></div>
+		<div class="bt2 image"><img src="ANH/04.jpg" border="2px" alt="ảnh 04" title="ảnh 04" ></div>
+		<div class="bt2 image"><img src="ANH/05.jpg" border="2px" alt="ảnh 05" title="ảnh 05" ></div>
+		<div class="bt2 image"><img src="ANH/06.jpg" border="2px" alt="ảnh 06" title="ảnh 06" ></div>	
+	</div>
+
+	<h1>BÀI THỰC HÀNH 3: HIỆU ỨNG TRÁI TIM</h1>
+	<img class="bt3" src="ANH/11.png" alt="trái tim" title="trái tim">
+</div>
+
+<h1>BÀI THỰC HÀNH 4: HIỆU ỨNG START-TODAY</h1>
+<div class="box-bt4"></div>
+<div class="coding">CODING</div>
+<div class="start">START</div>
+<div class="today">TODAY</div>
+<div class="teaching">TEACHING</div>
+<div class="learning">LEARNING</div>
+</div>
+</body>
+</html>

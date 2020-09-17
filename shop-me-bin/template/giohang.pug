@@ -1,0 +1,136 @@
+extends template-part/layout.pug
+block style
+    link(rel="stylesheet", href="css/giohang-style.css")
+block title
+    title Giỏ hàng của bạn
+block content
+    .container#cart-content
+        .text-link
+            a(href="index.html") Trang chủ &rsaquo;&nbsp;
+            .min-box Giỏ hàng
+        .title-cart
+            .title-cart-1
+                span GIỎ HÀNG CỦA BẠN
+            .title-cart-2
+                input#number-cart(type="text", name="", value="3" disabled)
+                span sản phẩm
+    .container
+        .row
+            .col-12.col-md-7.col-lg-7.col-xl-7
+                .list-item
+                    .item-cart#item-cart1
+                        .row
+                            .col-3
+                                img(src="img/boy/08.jpg", alt="ảnh sản phẩm")
+                            .col-9
+                                .col-mobile
+                                    .item-name-price
+                                        .item-name
+                                            span Bộ hè Wade 3
+                                        .item-price
+                                            input#price1(type="hidden", name="", value="110000")
+                                            span 110.000 vnđ
+                                    .item-detail-number
+                                        .item-detail
+                                            .item-msp
+                                                span Mã sản phẩm: SMB5231
+                                            .item-madein
+                                                span Xuất xứ: Thái Lan
+                                        .item-number
+                                            button#down-number1 &#45;
+                                            input.number-zone#number-zone-sp1(type="text", name="", value="1")
+                                            button#up-number1 &#43;
+                                .item-color-size
+                                    .color-size-zone
+                                        .item-color
+                                            span Màu sắc:
+                                            .color-box-1
+                                        .item-size
+                                            span Kích cỡ:
+                                            .size-box M
+                                    .delete#del1 Xóa
+                        hr
+                    
+                    .item-cart#item-cart2
+                        .row
+                            .col-3
+                                img(src="img/boy/05.jpg", alt="ảnh sản phẩm")
+                            .col-9
+                                .col-mobile
+                                    .item-name-price
+                                        .item-name
+                                            span Bộ thu đông xám
+                                        .item-price
+                                            input#price2(type="hidden", name="", value="230000")
+                                            span 230.000 vnđ
+                                    .item-detail-number
+                                        .item-detail
+                                            .item-msp
+                                                span Mã sản phẩm: SMB1578
+                                            .item-madein
+                                                span Xuất xứ: Việt Nam
+                                        .item-number
+                                            button#down-number2 &#45;
+                                            input.number-zone#number-zone-sp2(type="text", name="", value="1")
+                                            button#up-number2 &#43;
+                                .item-color-size
+                                    .color-size-zone
+                                        .item-color
+                                            span Màu sắc:
+                                            .color-box-2
+                                        .item-size
+                                            span Kích cỡ:
+                                            .size-box L
+                                    .delete#del2 Xóa  
+                        hr    
+                    .item-cart#item-cart3
+                        .row
+                            .col-3
+                                img(src="img/boy/11.jpg", alt="ảnh sản phẩm")
+                            .col-9
+                                .col-mobile
+                                    .item-name-price
+                                        .item-name
+                                            span Bodysuit áo rêu
+                                        .item-price
+                                            input#price3(type="hidden", name="", value="230000")
+                                            span 230.000 vnđ
+                                    .item-detail-number
+                                        .item-detail
+                                            .item-msp
+                                                span Mã sản phẩm: SMB4211
+                                            .item-madein
+                                                span Xuất xứ: Việt Nam
+                                        .item-number
+                                            button#down-number3 &#45;
+                                            input.number-zone#number-zone-sp3(type="text", name="", value="1")
+                                            button#up-number3 &#43;
+                                .item-color-size
+                                    .color-size-zone
+                                        .item-color
+                                            span Màu sắc:
+                                            .color-box-3
+                                        .item-size
+                                            span Kích cỡ:
+                                            .size-box S
+                                    .delete#del3 Xóa  
+                        hr#for-mobile    
+            .col-12.col-md-5.col-lg-5.col-xl-5
+                .provisional
+                    .text-provisional
+                        span Tạm tính
+                    .price-provisional
+                        input#provisional(type="text", name="", value="570.000" disabled)
+                        span vnđ
+                .coupon
+                    input(type="text", name="" placeholder="Mã giảm giá")
+                    button Áp dụng
+                .into-money
+                    .into-money-text
+                        span Thành tiền
+                    .into-money-price
+                        input#into-money(type="text", name="", value="570.000" disabled)
+                        span vnđ    
+                .pay-toWin
+                    button TIẾN HÀNH ĐẶT HÀNG
+                     

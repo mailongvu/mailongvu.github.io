@@ -1,0 +1,142 @@
+extends template-part/layout.pug
+block style
+    link(rel="stylesheet", href="css/thanhtoan-datmua-style.css")
+block title
+    title Thanh toán và Đặt mua
+block content
+    .container#payToWin
+        .text-link
+            a(href="index.html") Trang chủ &#32; &#32; &#32; &#32; &#32; &rsaquo;
+            .min-box Thanh toán và Đặt mua
+    .container   
+        .row
+            .col-12.col-md-7.col-lg-7.col-xl-7     
+                .mobile
+                    .login-line
+                        .circle
+                        span Bước 1: Đăng nhập
+                    .line-status-on
+                    .address-line
+                        .circle
+                        span Bước 2: Địa chỉ giao hàng
+                    .line-status-off
+                    .pay-line
+                        .circle
+                        span Bước 3: Thanh toán và đặt mua
+                .step-thirst
+                    span Bước 3: Thanh toán và Đặt mua
+                .go-way
+                    span Hình thức giao hàng
+                    .go-way-box
+                        .input-choise
+                            input#quickly(type="radio", name="go-way")
+                            label(for="quickly") Giao nhanh trong 4 giờ
+                            br
+                            span Chỉ áp dụng cho đơn hàng từ 500.000 vnđ trở lên và trong nội thành Hà Nội
+                        .input-choise
+                            input#post-office(type="radio", name="go-way")
+                            label(for="post-office") Chuyển phát nhanh qua Bưu điện
+                            br
+                            span
+                            | Phí vận chuyển tính theo 
+                            span(style='color: red')
+                                | Quy định
+                            span  của Bưu điện
+                        .input-choise
+                            input#nomal(type="radio", name="go-way")
+                            label(for="nomal")
+                                span(style='color: green; font-weight: bold') Miễn phí giao hàng&nbsp;
+                                span Giao hàng tiêu chuẩn
+                            br
+                            span Dự kiến giao hàng vào Thứ Bảy - 25/7/2020
+                .go-way
+                    span Hình thức thanh toán
+                    .go-way-box
+                        .input-choise
+                            input#money(type="radio", name="money")
+                            label(for="money") Thanh toán bằng tiền mặt
+                            br
+                            span Thanh toán tiền khi nhận hàng, đồng kiểm
+                        .input-choise
+                            input#zalo(type="radio", name="money")
+                            label(for="zalo") Thanh toán bằng Zalo Pay
+                            br
+                            a(href="https://zalopay.vn/#trang-chu") Hướng dẫn thanh toán
+                            span  bằng Zalo Pay
+                        .input-choise
+                            input#momo(type="radio", name="money")
+                            label(for="momo") Thanh toán bằng Momo
+                            br
+                            a(href="https://momo.vn/huong-dan") Hướng dẫn thanh toán
+                            span  bằng Momo
+                        .input-choise
+                            input#bank(type="radio", name="money")
+                            label(for="bank") Thanh toán bằng chuyển khoản
+                            br
+                            span Chuyển khoản liên ngân hàng trong nước
+
+            .col-12.col-md-5.col-lg-5.col-xl-5 
+                .go-way
+                    span Địa chỉ giao hàng
+                    .go-way-box
+                        span(style="font-weight:bold") Mai Long Vũ
+                        br
+                        span Tầng 402, tòa nhà M5, Mipec City View, 120 Đường Lê Xuân Điệp, Kiến Hưng, Hà Đông, Hà Nội
+                        br
+                        span Số điện thoại: 096.765.2510
+                .go-way
+                    span Đơn hàng của bạn
+                    .go-way-box
+                        .list-sp
+                            span 01 &nbsp;&times;&nbsp; Bộ hè Wade 3
+                            span 110.000 vnđ
+                        hr
+                        .list-sp
+                            span 01 &nbsp;&times;&nbsp; Bộ thu đông xám
+                            span 230.000 vnđ
+                        hr
+                        .list-sp
+                            span 01 &nbsp;&times;&nbsp; Bodysuit áo rêu
+                            span 230.000 vnđ
+                    .coupon-way
+                        input(type="text", name="" placeholder="Mã giảm giá")
+                        button Áp dụng
+                button#pay(data-toggle="modal" data-target="#success") ĐẶT MUA
+            
+            .modal.fade#success(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+                .modal-dialog.modal-dialog-centered(role='document')
+                    .modal-content-success
+                        .modal-body
+                            .head
+                                img(src="img/header/logo-web.png", alt="ảnh logo")
+                                img#tick-success(src="img/header/tick.svg", alt="tick thành công")
+                                br
+                                span(style="font-weight:bold;font-size:16px") Đặt hàng thành công
+                            .body
+                                .body-use
+                                    span(style="font-weight:bold") Mai Long Vũ
+                                    br
+                                    span Tầng 402, tòa nhà M5, Mipec City View, 120 Đường Lê Xuân Điệp, Kiến Hưng, Hà Đông, Hà Nội
+                                    br
+                                    span Số điện thoại: 096.765.2510 
+                                .body-use
+                                    span(style="font-weight:bold") Đơn hàng
+                                    br
+                                    .list
+                                        span 01 &nbsp;&times;&nbsp; Bộ hè Wade 3
+                                        span 110.000 vnđ
+                                    .list
+                                        span 01 &nbsp;&times;&nbsp; Bộ thu đông xám
+                                        span 230.000 vnđ
+                                    .list
+                                        span 01 &nbsp;&times;&nbsp; Bodysuit áo rêu
+                                        span 230.000 vnđ
+                                .body-sum
+                                    span Tổng tiền
+                                    span 570.000 vnđ
+
+        
+        
+
+
+

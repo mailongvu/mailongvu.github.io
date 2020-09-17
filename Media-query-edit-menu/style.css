@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+ul {
+  list-style: none;
+}
+.wrap {
+   max-width: 1500px;
+   margin: auto;
+}
+
+.banner img {
+    width: 100%;
+}
+.home {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.link {
+    width: 100%;
+    font-size: 20px;
+  margin-top: 10px;
+}
+
+li > a {
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+text-transform: uppercase;
+}
+
+.grid {
+    width: 100%;
+}
+
+.image {
+    box-sizing: border-box;
+    float: left;
+    width: 33.33333%;
+    border: 1px solid white;
+    margin-top: 10px;
+}
+
+/* Man hinh tablet */
+  @media (max-width: 800px) { 
+   
+    .grid .image {
+        width: 50%;
+    }
+  }
+  /* Man hinh dien thoai */
+  @media (max-width: 500px) {
+    li > a {   
+font-size: 0px;
+    }
+    .grid .image {
+        width: 100%;
+    }
+  }

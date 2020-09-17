@@ -1,0 +1,12 @@
+
+input[type="text"], input[type="password"] {
+    display: inline-block;
+}
+label.error {
+    display: inline-block;
+    color:red;
+    padding: 3px;
+    top: 35px;
+    font-size: 13px;
+    font-style: italic;
+}

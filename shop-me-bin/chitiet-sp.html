@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/png" href="img/index/favicon.png"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="css/xzoom.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/chitiet-sp.css"/>
+    <title>Chi tiết sản phẩm</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="text" id="hotline"><span>Hotline: 096.765.2510</span></div>
+            <input id="gr-search" type="text" placeholder="Bạn cần tìm gì?"/>
+            <div class="icon">
+              <div class="icon-gr-search"><a href="#">
+                  <div class="icon-search">
+                    <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"></path>
+                      <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"></path>
+                    </svg><span>Tìm kiếm</span>
+                  </div></a></div>
+              <div class="icon-account">
+                <svg class="bi bi-person-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"></path>
+                  <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                  <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"></path>
+                </svg><span>Tài khoản                </span>
+              </div>
+              <div class="icon-cart">
+                <svg class="bi bi-cart2" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                </svg><span>0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-main">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="logo">
+              <div class="menu-btn" onclick="menuList()">
+                <div id="menu-btnID">
+                  <svg class="bi bi-list" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                  </svg>
+                </div>
+              </div><a href="index.html"><img src="img/header/logo-web.png" alt="logo trang web"/></a>
+            </div>
+            <div id="menu-list">
+              <div class="icon-account-mobile">
+                <div class="account-mobile">
+                  <svg class="bi bi-person-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"></path>
+                    <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                    <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"></path>
+                  </svg><span>Tài khoản</span>
+                </div>
+                <div class="logout-mobile"><img src="img/header/logout.svg" alt=""/></div>
+              </div>
+              <div class="title"><span>DANH MỤC</span>
+                <div id="list-close" onclick="menuList()">
+                  <svg class="bi bi-arrow-left-square" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"></path>
+                    <path fill-rule="evenodd" d="M8.354 11.354a.5.5 0 0 0 0-.708L5.707 8l2.647-2.646a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708 0z"></path>
+                    <path fill-rule="evenodd" d="M11.5 8a.5.5 0 0 0-.5-.5H6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="list">
+                <div class="list-link">
+                  <ul>
+                    <li><a id="betrai" href="betrai.html">BÉ TRAI</a></li>
+                    <li><a id="begai" href="begai.html">BÉ GÁI</a></li>
+                    <li><a id="giamgia" href="giamgia.html">GIẢM GIÁ</a></li>
+                    <li><a id="baiviet" href="bai-viet.html">BÀI VIẾT</a></li>
+                    <li><a id="lienhe" href="lienhe.html">LIÊN HỆ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><img id="myBtn" src="img/index/top.svg" alt="" onclick="topFunction()" title="Go to top"/>
+      <div id="header-account"><img src="img/header/close.svg" alt="icon close popup" id="account-close"/>
+        <div class="box-btn">
+          <button id="btn-run"></button>
+          <button class="toggle-btn" id="login-btn" type="button">ĐĂNG NHẬP</button>
+          <button class="toggle-btn" id="register-btn" type="button">ĐĂNG KÝ</button>
+        </div>
+        <form id="login" action="">
+          <div class="login-facebook">
+            <button class="btn btn-primary">ĐĂNG NHẬP BẰNG FACEBOOK</button><span>hoặc bằng cách khác</span>
+            <hr/>
+          </div>
+          <div class="login-use">
+            <label for="">Số điện thoại</label>
+            <input type="text" name="phoneNumber" id="name"/><span id="name-span"></span>
+          </div>
+          <div class="login-use repo">
+            <label for="">Mật khẩu</label>
+            <input type="text" name="password" id="password"/><img src="img/header/eye.svg" alt=""/><span id="password-span"></span>
+          </div>
+          <div class="login-use-checkbox">
+            <input id="checkbox" type="checkbox" name=""/>
+            <label class="remember" for="checkbox">Ghi nhớ tài khoản   </label>
+          </div>
+          <div class="login-submit">
+            <button class="btn btn-primary" type="submit">ĐĂNG NHẬP</button>
+          </div>
+          <div class="login-law"><span>Bạn quên mật khẩu? &#32;</span><a href="" style="color:#007bff">Lấy lại mật khẩu</a></div>
+        </form>
+        <form id="register" action="">
+          <div class="login-facebook">
+            <button class="btn btn-primary">ĐĂNG KÝ BẰNG FACEBOOK</button><span>hoặc bằng cách khác</span>
+            <hr/>
+          </div>
+          <div class="login-use">
+            <label for="">Số điện thoại</label>
+            <input type="text" name="phonenumber" id="name-register"/><span id="name-register-span"></span>
+          </div>
+          <div class="login-use">
+            <label for="">Email</label>
+            <input type="text" name="email" id="email"/><span id="email-span">  </span>
+          </div>
+          <div class="login-use repo">
+            <label for="">Mật khẩu</label>
+            <input type="text" name="passWord" id="password-register"/><img src="img/header/eye.svg" alt=""/><span id="password-register-span"></span>
+          </div>
+          <div class="login-use repo">
+            <label for="">Nhập lại mật khẩu</label>
+            <input type="text" name="passwordAgain" id="pass-again"/><img src="img/header/eye.svg" alt=""/><span id="pass-again-span"> </span>
+          </div>
+          <div class="login-submit">
+            <button class="btn btn-primary" type="submit" style="margin-top:5px">TẠO TÀI KHOẢN</button>
+          </div>
+          <div class="login-law"><span>Khi bấm TẠO TÀI KHOẢN, bạn đã đồng ý với các <a href="href" style="color:red">Quy định</a> và <a href="href" style="color:red">Chính sách</a> của Cửa hàng  </span></div>
+        </form>
+      </div>
+      <div id="mask-page"></div>
+    </header>
+    <div class="container"> 
+      <div class="cart-container">
+        <div id="cart-zone">
+          <div class="cart-zone-title"><span style="font-weight:bold">GIỎ HÀNG CỦA BẠN</span><img src="img/header/close.svg" alt="icon close popup" id="cart-close"/></div>
+          <hr/>
+          <div class="cart-header"><span></span>
+            <div class="cart-name"><span> </span></div>
+            <div class="cart-price"><span> </span></div>
+          </div>
+          <hr/><a href="giohang.html">
+            <button>THANH TOÁN </button></a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="text-link"><a href="index.html">Trang chủ &rsaquo;&nbsp;</a><a href="betrai.html">Bé trai &rsaquo;&nbsp;</a>
+        <div class="min-box">Chi tiết sản phẩm</div>
+      </div>
+      <div class="item-view">
+        <div class="row">
+          <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+            <div class="item-img">
+              <div class="item-img-desktop">
+                <div class="row">
+                  <div class="col-2">
+                    <div class="item-img-simple-desktop"><img id="sp-main-1" src="img/detail/sp-main-1.jpg" alt="ảnh sản phẩm" onclick="changeImg1()"/><img id="sp-main-2" src="img/detail/sp-main-2.jpg" alt="ảnh sản phẩm" onclick="changeImg2()"/><img id="sp-main-3" src="img/detail/sp-main-3.jpg" alt="ảnh sản phẩm" onclick="changeImg3()"/><img id="sp-main-4" src="img/detail/sp-main-4.jpg" alt="ảnh sản phẩm" onclick="changeImg4()"/></div>
+                  </div>
+                  <div class="col-10"><img id="sp-main" src="img/detail/preview/sp-main-1.jpg" alt="ảnh sản phẩm" xoriginal="img/detail/original/front-1.jpg"/></div>
+                </div>
+                <div class="video">
+                  <div class="video-text">
+                    <p>Video thực tế sản phẩm</p>
+                  </div>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/_gfHLcMEXRc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+              </div>
+              <div class="item-img-mobile">
+                <div class="item-img-main"><img id="sp-main-mobile" src="img/detail/preview/sp-main-1.jpg" alt="ảnh sản phẩm" xoriginal="img/detail/original/front-1.jpg"/></div>
+                <div class="item-img-simple-mobile">
+                  <div class="row">
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3"><img id="sp-main-1" src="img/detail/sp-main-1.jpg" alt="ảnh sản phẩm" onclick="changeImg1mobile()"/></div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3"><img id="sp-main-2" src="img/detail/sp-main-2.jpg" alt="ảnh sản phẩm" onclick="changeImg2mobile()"/></div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3"><img id="sp-main-3" src="img/detail/sp-main-3.jpg" alt="ảnh sản phẩm" onclick="changeImg3mobile()"/></div>
+                    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3"><img id="sp-main-4" src="img/detail/sp-main-4.jpg" alt="ảnh sản phẩm" onclick="changeImg4mobile()"/></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+            <div class="item-detail">
+              <div class="detail-main">
+                <div class="detail-main-title">
+                  <div class="detail-main-title text">
+                    <hr/><span>Bộ áo khoác bé trai LOPO</span>
+                  </div>
+                  <div class="detail-main-title cart"><span>290.000 vnđ</span></div>
+                </div>
+                <hr/>
+                <div class="detail-main-content">
+                  <div class="msp"><span>Mã sản phẩm: SMB1234</span>
+                    <div class="stocking"><img src="img/detail/tick.png" alt="tick chữ V"/><span>Còn hàng</span></div>
+                  </div>
+                  <div class="origin"><span>Xuất xứ: Nhập khẩu chính hãng Thái Lan</span></div>
+                  <div class="color-size">
+                    <div class="color"><span>Màu sắc:</span>
+                      <div class="color-btn-zone">
+                        <label class="toggle" for="toggle-1">
+                          <input id="toggle-1" type="checkbox"/>
+                          <div class="tick-1"></div>
+                        </label>
+                        <label class="toggle" for="toggle-2">
+                          <input id="toggle-2" type="checkbox"/>
+                          <div class="tick-2"></div>
+                        </label>
+                        <label class="toggle" for="toggle-3">
+                          <input id="toggle-3" type="checkbox"/>
+                          <div class="tick-3"></div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="size"><span>Kích cỡ:</span>
+                      <div class="size-btn-zone">
+                        <label class="toggle" for="toggle-s"> 
+                          <input id="toggle-s" type="checkbox"/>
+                          <div class="tick-s">S</div>
+                        </label>
+                        <label class="toggle" for="toggle-m">
+                          <input id="toggle-m" type="checkbox"/>
+                          <div class="tick-m">M</div>
+                        </label>
+                        <label class="toggle" for="toggle-l">
+                          <input id="toggle-l" type="checkbox"/>
+                          <div class="tick-l">L</div>
+                        </label>
+                        <label class="toggle" for="toggle-xl">
+                          <input id="toggle-xl" type="checkbox"/>
+                          <div class="tick-xl">XL</div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="detail-main-btn">
+                  <button data-toggle="modal" data-target="#addToCart">THÊM VÀO GIỎ HÀNG</button>
+                </div>
+              </div>
+              <div class="detail-normal">
+                <div class="normal">
+                  <div class="tick-line1"><img src="img/detail/tick.png" alt="tick chữ V"/><span>MIỄN PHÍ VẬN CHUYỂN TOÀN QUỐC</span></div>
+                  <div class="tick-line2">       <span>Áp dụng cho đơn hàng từ 500.000 vnđ trở lên</span></div>
+                </div>
+                <div class="normal">
+                  <div class="tick-line1"><img src="img/detail/tick.png" alt="tick chữ V"/><span>ĐỔI TRẢ DỄ DÀNG</span></div>
+                  <div class="tick-line2">       <span>Sản phẩm đổi trả trong vòng 30 ngày*</span></div>
+                </div>
+                <div class="normal">
+                  <div class="tick-line1"><img src="img/detail/tick.png" alt="tick chữ V"/><span>GIẢM GIÁ ĐƠN HÀNG TIẾP THEO</span></div>
+                  <div class="tick-line2">       <span>Giảm giá lên tới 30% cho đơn hàng tiếp theo</span></div>
+                </div>
+              </div>
+              <div class="detail-use">
+                <div class="use">
+                  <div class="use-title"><span>Mô tả sản phẩm</span></div>
+                  <div class="use-content"><span>Set quần áo bé trai wade 3, quần áo đồng màu, tay áo có sọc đôi màu sắc, cho bé từ 2 tuổi.</span></div>
+                </div>
+                <div class="use">
+                  <div class="use-title"><span>Chất liệu</span></div>
+                  <div class="use-content"><span>100% cotton</span></div>
+                </div>
+                <div class="use">
+                  <div class="use-title"><span>Hướng dẫn giặt là</span></div>
+                  <div class="use-content"><span>Giặt máy dưới 30 độ C</span><br/><span>Sấy khô dưới 60 độ C</span><br/><span>Không được sử dụng chất tẩy rửa</span><br/><span>Được là hơi ở nhiệt độ không quá nóng</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="doing">
+        <div class="doing-box1"></div>
+        <div class="doing-box2">
+          <Span>Sản phẩm tương tự</Span>
+        </div>
+      </div>
+      <div class="owl-carousel">
+        <div class="item">
+          <div class="item-box"><a href="chitiet-sp.html"><img src="img/boy/09.jpg" alt="ảnh 09"/></a>
+            <div id="item-mask"></div><a href="chitiet-sp.html">
+              <div id="item-view">Chi tiết</div></a>
+          </div>
+          <div class="item-info">
+            <div class="item-info1">
+              <div class="item-name"><a href="chitiet-sp.html"><span>Bodysuit áo rời quần</span></a></div>
+              <div class="item-price"><span>270.000 vnđ</span> <span class="span-off">|  -30%</span></div>
+            </div>
+            <div class="item-addCart">
+              <button class="addCart"> <a href="giohang.html">Mua ngay</a></button>
+              <button class="addCart-icon">
+                <svg class="bi bi-cart2" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">           </path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-box"><a href="chitiet-sp.html"><img src="img/boy/11.jpg" alt="ảnh 11"/></a>
+            <div id="item-mask"></div><a href="chitiet-sp.html">
+              <div id="item-view">Chi tiết</div></a>
+          </div>
+          <div class="item-info">
+            <div class="item-info1">
+              <div class="item-name"><a href="chitiet-sp.html"><span>Bodysuit áo rêu</span></a></div>
+              <div class="item-price"><span>230.000 vnđ</span> <span class="span-off">|  -50%</span></div>
+            </div>
+            <div class="item-addCart">
+              <button class="addCart"> <a href="giohang.html">Mua ngay</a></button>
+              <button class="addCart-icon">
+                <svg class="bi bi-cart2" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">           </path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-box"><a href="chitiet-sp.html"><img src="img/boy/06.jpg" alt="ảnh 06"/></a>
+            <div id="item-mask"></div><a href="chitiet-sp.html">
+              <div id="item-view">Chi tiết</div></a>
+          </div>
+          <div class="item-info">
+            <div class="item-info1">
+              <div class="item-name"><a href="chitiet-sp.html"><span>Bodysuit áo nâu dày</span></a></div>
+              <div class="item-price"><span>200.000 vnđ</span> <span class="span-off">|  -30%</span></div>
+            </div>
+            <div class="item-addCart">
+              <button class="addCart"> <a href="giohang.html">Mua ngay</a></button>
+              <button class="addCart-icon">
+                <svg class="bi bi-cart2" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">           </path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-box"><a href="chitiet-sp.html"><img src="img/girl/02.jpg" alt="ảnh 02"/></a>
+            <div id="item-mask"></div><a href="chitiet-sp.html">
+              <div id="item-view">Chi tiết</div></a>
+          </div>
+          <div class="item-info">
+            <div class="item-info1">
+              <div class="item-name"><a href="chitiet-sp.html"><span>Bodysuit bộ liền vàng</span></a></div>
+              <div class="item-price"><span>170.000 vnđ</span> <span class="span-off">|  -20%</span></div>
+            </div>
+            <div class="item-addCart">
+              <button class="addCart"> <a href="giohang.html">Mua ngay</a></button>
+              <button class="addCart-icon">
+                <svg class="bi bi-cart2" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">           </path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-box"><a href="chitiet-sp.html"><img src="img/girl/03.jpg" alt="ảnh 03"/></a>
+            <div id="item-mask"></div><a href="chitiet-sp.html">
+              <div id="item-view">Chi tiết</div></a>
+          </div>
+          <div class="item-info">
+            <div class="item-info1">
+              <div class="item-name"><a href="chitiet-sp.html"><span>Váy thủy thủ màu trắng</span></a></div>
+              <div class="item-price"><span>150.000 vnđ</span> <span class="span-off">|  -45%</span></div>
+            </div>
+            <div class="item-addCart">
+              <button class="addCart"> <a href="giohang.html">Mua ngay</a></button>
+              <button class="addCart-icon">
+                <svg class="bi bi-cart2" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">           </path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-box"><a href="chitiet-sp.html"><img src="img/girl/05.jpg" alt="ảnh 05"/></a>
+            <div id="item-mask"></div><a href="chitiet-sp.html">
+              <div id="item-view">Chi tiết</div></a>
+          </div>
+          <div class="item-info">
+            <div class="item-info1">
+              <div class="item-name"><a href="chitiet-sp.html"><span>Váy chấm bi nơ xanh</span></a></div>
+              <div class="item-price"><span>245.000 vnđ</span> <span class="span-off">|  -30%</span></div>
+            </div>
+            <div class="item-addCart">
+              <button class="addCart"> <a href="giohang.html">Mua ngay</a></button>
+              <button class="addCart-icon">
+                <svg class="bi bi-cart2" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z">           </path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="register">
+        <div class="container-fluid">
+          <div class="text"><span>ĐĂNG KÝ NHẬN KHUYẾN MẠI</span></div>
+          <div class="input-btn">
+            <form id="email-footer">
+              <input type="text" name="eMail" placeholder="Địa chỉ email của bạn"/>
+              <button type="submit">Đăng ký</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="information">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="title"><span>Thông tin cửa hàng</span></div>
+              <div class="title-text"><span>Địa chỉ: Tầng 402, tòa nhà M5, Mipec City View</span><span>&#32; 120 Đường Lê Xuân Điệp, Kiến Hưng, Hà Đông, Hà Nội </span></div>
+              <div class="title-text"><span>Giờ mở cửa: Từ 8h00 đến 22h00</span></div>
+              <div class="title-text"><span>Số điện thoại: 096.765.2510 / 0375.685.191</span></div>
+              <div class="title-text"><span>Email: shopmebin@gmail.com</span></div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="title"><span>Hỗ trợ khách hàng</span></div>
+              <div class="title-text"><a href="#">Các câu hỏi thường gặp  </a></div>
+              <div class="title-text"><a href="#">Gửi yêu cầu hỗ trợ</a></div>
+              <div class="title-text"><a href="#">Hướng dẫn đặt hàng</a></div>
+              <div class="title-text"><a href="#">Hướng dẫn đổi trả</a></div>
+              <div class="title-text"><a href="#">Phương thức vận chuyển</a></div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="title"><span>Phương thức thanh toán</span></div>
+              <div class="img"><img src="img/footer/zalo-icon.png" alt="thanh toán zalo"/><a href="#">Thanh toán qua Zalo Pay</a></div>
+              <div class="img"><img src="img/footer/momo-icon.png" alt="thanh toán momo"/><a href="#">Thanh toán qua Momo</a></div>
+              <div class="img"><img src="img/footer/bank.svg" alt="thanh toán ngân hàng"/><a href="#">Thanh toán bằng chuyển khoản</a></div>
+              <div class="img"><img src="img/footer/money.svg" alt="thanh toán tiền mặt"/><a href="#">Thanh toán bằng tiền mặt</a></div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="title"><span>Facebook của chúng tôi</span></div>
+              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthuydungwinter.cubin%2F&amp;tabs=timeline&amp;width=360&amp;height=150&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId" width="360" height="150" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/smbData.js"></script>
+    <script src="js/listDistrictAndCommune.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/xzoom.min.js"></script>
+    <script src="js/shopmebin.js"></script>
+  </body>
+</html>

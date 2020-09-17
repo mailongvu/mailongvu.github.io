@@ -1,0 +1,93 @@
+extends template-part/layout.pug
+block style
+    link(rel="stylesheet", href="css/home-style.css")
+block title
+    title Shop Mẹ Bin
+block banner
+    banner
+        .container#banner
+            #carouselExampleInterval.carousel.slide(data-ride='carousel')
+                .carousel-inner
+                    .carousel-item.active(data-interval='4000')
+                        a(href="giamgia.html")
+                            img.d-block.w-100(src='img/banner/index/banner-01.png' alt='ảnh banner-01')
+                    .carousel-item(data-interval='4000')
+                        a(href="betrai.html")
+                            img.d-block.w-100(src='img/banner/index/banner-02.png' alt='ảnh banner-02')
+                    .carousel-item
+                        a(href="begai.html")
+                            img.d-block.w-100(src='img/banner/index/banner-03.png' alt='ảnh banner-03')
+                    .carousel-item
+                        a(href="betrai.html")
+                            img.d-block.w-100(src='img/banner/index/betrai-logo.jpg' alt='ảnh banner-04')
+                    .carousel-item
+                        a(href="begai.html")
+                            img.d-block.w-100(src='img/banner/index/begai-logo.jpg' alt='ảnh banner-05')
+                    .carousel-item
+                        a(href="giamgia.html")
+                            img.d-block.w-100(src='img/banner/index/sale.jpg' alt='ảnh banner-06')
+                a.carousel-control-prev(href='#carouselExampleInterval' role='button' data-slide='prev')
+                    span.carousel-control-prev-icon(aria-hidden='true')
+                    span.sr-only Previous
+                a.carousel-control-next(href='#carouselExampleInterval' role='button' data-slide='next')
+                    span.carousel-control-next-icon(aria-hidden='true')
+                    span.sr-only Next
+block content
+    section
+        .boy-girl
+            .container
+                .row
+                    .col-12.col-md-6
+                        .boy-zone(data-aos="fade-right")
+                            a(href="betrai.html")
+                                img(src="img/index/boy-img.jpg", alt="Sản phẩm bé trai")
+                                section
+                                    .button-boy
+                                        .flip
+                                            .front-face
+                                                .text Bé trai
+                                            .back-face
+                                                .text Xem ngay
+                    .col-12.col-md-6
+                        .girl-zone(data-aos="fade-left")
+                            a(href="begai.html")
+                                img(src="img/index/girl-img.jpg", alt="Sản phẩm bé gái")
+                                section
+                                        .button-girl
+                                            .flip
+                                                .front-face
+                                                    .text Bé gái
+                                                .back-face
+                                                    .text Xem ngay
+        .sale-off                                            
+            .container
+                .row
+                    .col-12
+                        .sale-zone(data-aos="fade-up")
+                            a(href="giamgia.html")
+                                img(src="img/index/banner-sale.jpg", alt="Giảm giá siêu khủng")
+                                section
+                                    .button-sale
+                                        .flip
+                                            .front-face
+                                                .text Sale sốc
+                                            .back-face
+                                                .text Xem ngay
+    section
+        .container
+            .new-order
+                .row
+                    .col-12.col-md-6
+                        .sp-new(data-aos="fade-right")
+                            a(href="betrai.html")
+                                img(src="img/index/new.jpg", alt="Sản phẩm mới về")
+                                .button-new Xem ngay         
+                    .col-12.col-md-6
+                        .sp-order(data-aos="fade-left")
+                            a(href="begai.html")
+                                img(src="img/index/sp.jpg", alt="Sản phẩm bán chạy")
+                                .button-order Xem ngay
+                            a(href="")
+                                img(src="img/index/number1.jpg", alt="Cam kết bán hàng")
+            
+

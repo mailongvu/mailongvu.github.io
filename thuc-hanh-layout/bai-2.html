@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai thuc hanh 2</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: auto;
+            padding-top: 30px;
+            grid-gap: 15px;
+         margin: 20px
+        }
+
+        .item {
+            height: 300px;
+            max-width: 100%;
+            background-color: blue;
+            border: 1px solid black;
+
+        }
+
+        @media (min-width: 700px) {
+            .container {
+                grid-template-columns: auto auto auto;
+                grid-gap: 15px;
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+
+</html>

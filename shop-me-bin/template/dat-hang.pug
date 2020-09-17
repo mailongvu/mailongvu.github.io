@@ -1,0 +1,133 @@
+extends template-part/layout.pug
+block style
+    link(rel="stylesheet", href="css/dathang-style.css")
+block title
+    title Tiến hành đặt hàng
+block content
+    .container#order-content
+        .text-link
+            a(href="index.html") Trang chủ &#32; &#32; &#32; &#32; &#32; &rsaquo;
+            .min-box Tiến hành đặt hàng
+        .row
+            .col-12.col-md-5.col-lg-4
+                .list-pay
+                    .list-title ĐƠN HÀNG
+                    hr
+                    .item-pay
+                        .item-nam 01&nbsp;&times;&nbsp;Bộ hè Wade 3
+                        .item-money 110.000 vnđ
+                    hr
+                    .item-pay
+                        .item-nam 01&nbsp;&times;&nbsp;Bộ thu đông xám
+                        .item-money 230.000 vnđ
+                    hr
+                    .item-pay
+                        .item-nam 01&nbsp;&times;&nbsp;Bodysuit áo rêu
+                        .item-money 230.000 vnđ
+                    hr
+                    .item-sum
+                        .sum-name TỔNG CỘNG
+                        .sum-money 570.000 vnđ
+            .col-12.col-md-7.col-lg-8
+                .address-pay
+                    .address-title THÔNG TIN GIAO HÀNG
+                    hr
+                    form#new-zone(action="thanhtoan-datmua.html")
+                        .login-use-new
+                            label(for="") Họ và tên
+                                span(style="color:red;font-style:normal") &nbsp;(*)
+                            input#name-new(type="text", name="nameNew")
+                        .login-use-new
+                            label(for="") Số điện thoại
+                                span(style="color:red;font-style:normal") &nbsp;(*)
+                            input(type="text", name="phoneNew", id="phone-new")
+                        .login-use-new
+                            label(for="") Email
+                            input(type="text", name="emailNew", id="email-new") 
+                        .login-use-new
+                            label(for="") Tỉnh/Thành phố
+                                span(style="color:red;font-style:normal") &nbsp;(*)
+                            select#input-user-city-province(name='city-province')
+                                option(value='0')  Chọn Tỉnh/Thành Phố...
+                                option(value='01')  Thành phố Hà Nội
+                                option(value='79')  Thành phố Hồ Chí Minh
+                                option(value='31')  Thành phố Hải Phòng
+                                option(value='48')  Thành phố Đà Nẵng
+                                option(value='92')  Thành phố Cần Thơ
+                                option(value='02')  Tỉnh Hà Giang
+                                option(value='04')  Tỉnh Cao Bằng
+                                option(value='06')  Tỉnh Bắc Kạn
+                                option(value='08')  Tỉnh Tuyên Quang
+                                option(value='10')  Tỉnh Lào Cai
+                                option(value='11')  Tỉnh Điện Biên
+                                option(value='12')  Tỉnh Lai Châu
+                                option(value='14')  Tỉnh Sơn La
+                                option(value='15')  Tỉnh Yên Bái
+                                option(value='17')  Tỉnh Hoà Bình
+                                option(value='19')  Tỉnh Thái Nguyên
+                                option(value='20')  Tỉnh Lạng Sơn
+                                option(value='22')  Tỉnh Quảng Ninh
+                                option(value='24')  Tỉnh Bắc Giang
+                                option(value='25')  Tỉnh Phú Thọ
+                                option(value='26')  Tỉnh Vĩnh Phúc
+                                option(value='27')  Tỉnh Bắc Ninh
+                                option(value='30')  Tỉnh Hải Dương
+                                option(value='33')  Tỉnh Hưng Yên
+                                option(value='34')  Tỉnh Thái Bình
+                                option(value='35')  Tỉnh Hà Nam
+                                option(value='36')  Tỉnh Nam Định
+                                option(value='37')  Tỉnh Ninh Bình
+                                option(value='38')  Tỉnh Thanh Hóa
+                                option(value='40')  Tỉnh Nghệ An
+                                option(value='42')  Tỉnh Hà Tĩnh
+                                option(value='44')  Tỉnh Quảng Bình
+                                option(value='45')  Tỉnh Quảng Trị
+                                option(value='46')  Tỉnh Thừa Thiên Huế
+                                option(value='49')  Tỉnh Quảng Nam
+                                option(value='51')  Tỉnh Quảng Ngãi
+                                option(value='52')  Tỉnh Bình Định
+                                option(value='54')  Tỉnh Phú Yên
+                                option(value='56')  Tỉnh Khánh Hòa
+                                option(value='58')  Tỉnh Ninh Thuận
+                                option(value='60')  Tỉnh Bình Thuận
+                                option(value='62')  Tỉnh Kon Tum
+                                option(value='64')  Tỉnh Gia Lai
+                                option(value='66')  Tỉnh Đắk Lắk
+                                option(value='67')  Tỉnh Đắk Nông
+                                option(value='68')  Tỉnh Lâm Đồng
+                                option(value='70')  Tỉnh Bình Phước
+                                option(value='72')  Tỉnh Tây Ninh
+                                option(value='74')  Tỉnh Bình Dương
+                                option(value='75')  Tỉnh Đồng Nai
+                                option(value='77')  Tỉnh Bà Rịa - Vũng Tàu
+                                option(value='80')  Tỉnh Long An
+                                option(value='82')  Tỉnh Tiền Giang
+                                option(value='83')  Tỉnh Bến Tre
+                                option(value='84')  Tỉnh Trà Vinh
+                                option(value='86')  Tỉnh Vĩnh Long
+                                option(value='87')  Tỉnh Đồng Tháp
+                                option(value='89')  Tỉnh An Giang
+                                option(value='91')  Tỉnh Kiên Giang
+                                option(value='93')  Tỉnh Hậu Giang
+                                option(value='94')  Tỉnh Sóc Trăng
+                                option(value='95')  Tỉnh Bạc Liêu
+                                option(value='96')  Tỉnh Cà Mau
+                        .login-use-new
+                            label(for="") Quận/Huyện
+                                span(style="color:red;font-style:normal") &nbsp;(*)
+                            select#input-user-district(name='district')
+                                option(value='0')  Chọn Quận/Huyện...
+                        .login-use-new
+                            label(for="") Phường/Xã
+                                span(style="color:red;font-style:normal") &nbsp;(*)
+                            select#input-user-commune(name='commune')
+                                option(value='0')  Chọn Phường/Xã... 
+                        .login-use-new
+                            label(for="") Địa chỉ
+                                span(style="color:red;font-style:normal") &nbsp;(*)
+                            textarea(name="addressNew", id = "address-zone-new")
+                        .this-add
+                            button(type="submit") GIAO ĐẾN ĐỊA CHỈ NÀY
+                    
+
+
