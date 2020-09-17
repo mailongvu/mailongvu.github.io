@@ -39,7 +39,7 @@ button {
 button::after {
   position: relative;
   right: 0;
-  content: " \276f";
+  /* content: " \276f"; */
   transition: all 0.15s linear;
 }
 
@@ -308,12 +308,6 @@ header .count {
   }
 }
 
-.modal{
-  position: fixed;
-  width: 300px;
-  height: 200px;
-}
-
 /* --- MEDIUM & LARGE SCREEN --- */
 @media all and (min-width: 600px) {
   html {
@@ -358,4 +352,41 @@ header .count {
   html {
     font-size: 16px;
   }
+}
+
+.modal {
+  width: 400px;
+  height: 200px;
+  text-align: center;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 0px;
+  position: fixed;
+  margin: auto;
+  transform: translateX(50%);
+  right: 50%;
+  top: 10px;
+  border-radius: 7px;
+}
+
+.modal button {
+  height: 50px;
+  margin: 10px;
+  
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 1.5rem;
+}
+.btnModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnOk {
+  background: rgb(22, 122, 252);
+  width: 150px;
+}
+.btnCancel {
+  background: rgb(196, 196, 196);
+  width: 80px;
 }
