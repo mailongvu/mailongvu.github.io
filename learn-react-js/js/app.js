@@ -56,7 +56,7 @@ function App() {
       <CartHeader products={products} />
       <CartBody products={products} />
       <CartFooter
-        subTotal={sumCount()}
+        subTotal={sumCount}
         tax={sumCount() * 0.1}
       />
       <button onClick={clear}></button>
